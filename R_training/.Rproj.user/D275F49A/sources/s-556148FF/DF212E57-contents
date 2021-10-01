@@ -1,0 +1,171 @@
+---
+title: "Rを用いたデータ解析の <br> 基礎とその実践"
+author: "Satoshi Ansai"
+date: "Oct, 2021"
+output:
+  rmdformats::robobook:
+    highlight: kate
+---
+
+
+```{r setup, include=FALSE}
+library(knitr)
+library(rmdformats)
+
+## Global options
+options(max.print="75")
+opts_chunk$set(echo=FALSE,
+	             cache=TRUE,
+               prompt=FALSE,
+               tidy=TRUE,
+               comment=NA,
+               message=FALSE,
+               warning=FALSE)
+opts_knit$set(width=75)
+```
+
+安齋 賢（東北大学 大学院生命科学研究科 分子行動分野）
+
+この資料は石川由希博士が作製した[Rを用いたデータ解析の基礎と応用](https://comicalcommet.github.io/r-training-2021/)を分野内勉強会用に再構成したものです。
+
+順次内容を追加予定です。
+
+
+### [Step 0：まずは準備しよう！](R_training_2021_1.html)
+- 勉強会までに行うこと（RとR Studioのインストール）
+- 勉強会について
+
+### [Step 1：Rの基本をマスターしよう！](R_training_2021_2.html)
+- [データ解析の重要性について](R_training_2021_2.html#2)
+- [Rと接する上での心構え](R_training_2021_2.html#14)
+- [この実習の取り組み方](R_training_2021_2.html#16)
+- [Rの使い方](R_training_2021_2.html#18)
+- [変数を扱おう](R_training_2021_2.html#28)
+- [データ型（class）を扱おう](R_training_2021_2.html#35)
+- [ベクトル（vector）を扱おう](R_training_2021_2.html#39)
+- [データフレーム（data.frame）を扱おう](R_training_2021_2.html#44)
+- [パッケージを使おう](R_training_2021_2.html#54)
+
+### [Step 2：データを可視化しよう！](R_training_2021_3.html)
+- [データ可視化の重要性](R_training_2021_3.html#3)
+<br>  
+- ggplot2でデータを眺めよう
+    - [geom_histogram](R_training_2021_3.html#9) ヒストグラム
+    - [geom_density](R_training_2021_3.html#16) 密度分布
+    - [geom_point](R_training_2021_3.html#20) 散布図
+        - [aes(color)](R_training_2021_3.html#21) 色を表現する
+        - [facet_wrap, facet_grid](R_training_2021_3.html#25) グラフを分ける
+    - [geom_boxplot](R_training_2021_3.html#32) 箱ヒゲ
+        - [theme_***](R_training_2021_3.html#33) 全体の雰囲気を変える
+        - [color（aesの外）](R_training_2021_3.html#35) 線を特定の色にする
+        - [fill（aesの外）](R_training_2021_3.html#36) 特定の色で塗りつぶす
+        - [color（aesの中）](R_training_2021_3.html#37) 線を値に応じた色にする
+    - [coord_cartesian](R_training_2021_3.html#38) 軸の範囲を変える
+    - [labs](R_training_2021_3.html#38) タイトルや軸ラベルを書く／書き換える
+    - [theme](R_training_2021_3.html#39) 文字の大きさなどを細かく設定
+    - [ggsave()](R_training_2021_3.html#41) 図をファイルとして保存
+    <br>  
+    - その他のグラフの描き方を知りたい方は
+       - [ggplot2公式サイト](https://ggplot2.tidyverse.org/reference/index.html)
+       - [Jaehyun Songさんの解説](https://www.jaysong.net/ggplot_intro2/)
+       - など
+  
+### [Step 3：データを解析しよう！](R_training_2021_4.html)
+- dplyrでデータを解析しよう
+    - [head()](R_training_2021_4.html#7) データをざっくり眺める
+    - [str()](R_training_2021_4.html#8) データの変数をリストアップする
+    - [select()](R_training_2021_4.html#9) 指定した列を抽出する
+        - [select(starts_with())](R_training_2021_4.html#11) 部分一致
+    - [filter()](R_training_2021_4.html#15) 特定の値の行を抽出する
+        - [filter(【列名】 %in% c(【値1】, 【値2】))](R_training_2021_4.html#16) 複数の値
+        - [filter(【列名】 > 【値】)](R_training_2021_4.html#17) 比較演算子
+        - [filter(【列名A】 > 【値】, 【列名B】 > 【値】)](R_training_2021_4.html#22) 複数条件（AND）
+        -  [filter(【列名A】 > 【値】| 【列名B】 > 【値】)](R_training_2021_4.html#22) 複数条件（OR）
+    - [mutate()](R_training_2021_4.html#32) 新しい列を作る／既存の列の値を変更する
+        - [mutate(if_else()), mutate(case_when)](R_training_2021_4.html#34) 条件に応じた値
+    - [summarize()](R_training_2021_4.html#37) 数値を要約する
+        - [group_by()](R_training_2021_4.html#39)  特定のグループに分けて要約する
+        - [across()](R_training_2021_4.html#42) 複数条件の要約を短く書く
+    -  [bind_cols, bind_rows](R_training_2021_4.html#50) 複数のデータフレームを結合する
+    <br>  
+    - その他便利な関数を探したい方は
+        - [Heavy Watalさんの解説](https://heavywatal.github.io/rstats/dplyr.html)
+        - など
+<br>  
+- tidyrでデータを使える形に変形しよう
+    - [pivot_wider()](R_training_2021_4.html#54) 縦長のデータを横広に
+    - [pivot_longer()](R_training_2021_4.html#55) 横広のデータを縦長に
+    - [separate()](R_training_2021_4.html#62) 文字列カラムを複数に分割
+    - [unite()](R_training_2021_4.html#64) 複数の文字列カラムを結合
+        <br>  
+    - その他便利な関数を探したい方は
+        - [Heavy Watalさんの解説](https://heavywatal.github.io/rstats/tidyr.html)
+        - など
+<br>  
+- ggplot2の実例
+    - [棒グラフ±エラーバー](R_training_2021_4.html#46)
+
+### [Step 4：自分のデータを扱おう！](R_training_2021_5.html)
+- [整然（tidy）データとは何か](R_training_2021_5.html#4)
+- readrで自分のデータを読み込もう
+    - [read_csv()](R_training_2021_5.html#24) CSVファイルの読み込み
+    - [write_csv()](R_training_2021_5.html#27) CSVファイルの書き出し
+
+### [Step 5：統計解析をしよう！](R_training_2021_6_2.html)
+- [統計解析の世界](R_training_2021_6_2.html#3)
+- [母集団と標本](R_training_2021_6_2.html#5)
+- [応答変数と説明変数](R_training_2021_6_2.html#6)
+- [質的変数と量的変数](R_training_2021_6_2.html#7)
+- [統計解析法の選び方](R_training_2021_6_2.html#8)
+    - [応答変数も説明変数も量的](R_training_2021_6_2.html#8)
+    - [応答変数は量的、説明変数は質的](R_training_2021_6_2.html#9)
+    - [応答変数は質的、説明変数は量的](R_training_2021_6_2.html#10)
+    - [応答変数も説明変数も質的](R_training_2021_6_2.html#11)
+- [仮説検定と統計モデリング](R_training_2021_6_2.html#12)
+- 統計的仮説検定
+    - [統計的仮説検定の考え方](R_training_2021_6_2.html#14)
+    - [p値をどのように求めるか１](R_training_2021_6_2.html#15)
+    - [確率分布](R_training_2021_6_2.html#16)
+    - [p値をどのように求めるか２](R_training_2021_6_2.html#16)
+    - [さまざまな検定統計量](R_training_2021_6_2.html#20)
+    - [統計解析の心構え](R_training_2021_6_2.html#21)
+    - [仮説検定のよくある間違い](R_training_2021_6_2.html#22)
+    - [統計的仮説検定の選び方](R_training_2021_6_2.html#23)
+        - [正規性](R_training_2021_6_2.html#32)
+        - [等分散性](R_training_2021_6_2.html#33)
+    - [統計的仮説検定の進め方](R_training_2021_6_2.html#34)
+    - ２群の比較
+        - [正規性あり等分散性なしの２群の比較（Welchのt検定）](R_training_2021_6_2.html#41)
+        - [統計解析の結果を出力する（easystatsパッケージ群のreportパッケージ）](R_training_2021_6_2.html#44)
+        - [正規性あり等分散性ありの２群の比較（Studentのt検定）](R_training_2021_6_2.html#41)
+        - [対応のあり／なしの設定](R_training_2021_6_2.html#47)
+        - [正規性なし等分散性ありの２群の比較（Wilcoxonの順位和検定）](R_training_2021_6_2.html#59)
+            - [対応のあり／なしの設定（Wilcoxonの符号順位検定）](R_training_2021_6_2.html#61)
+        - [正規性なし等分散性なしの２群の比較（Brunner-Munzel検定）](R_training_2021_6_2.html#63)
+    - 多群（３群以上）の比較
+        - [２群の比較を繰り返すのはダメ](R_training_2021_6_2.html#66)
+        - [正規性あり等分散性ありの多群比較（一元分散分析ANOVA, Tukeyの多重比較）](R_training_2021_6_2.html#77)
+        - [正規性なし等分散性ありの多群比較（Kruscal-Wallis検定, Steel-Dwass検定）](R_training_2021_6_2.html#82)
+- 統計モデリング
+    - [一般化線形モデルGLM](R_training_2021_6_2.html#88)
+        - [GLMを構成する３つの要素](R_training_2021_6_2.html#89)
+        - [glm関数の書き方](R_training_2021_6_2.html#90)
+            - [線形予測子](R_training_2021_6_2.html#91)
+            - [誤差構造](R_training_2021_6_2.html#92)
+            - [リンク関数](R_training_2021_6_2.html#93)
+            - [結果の見方](R_training_2021_6_2.html#97)
+            - GLMでよく使う統計モデル
+                - 単回帰
+                    - [直線回帰](R_training_2021_6_2.html#96)
+                    - [ポアソン回帰](R_training_2021_6_2.html#103)
+                        - [ポアソン分布とは](R_training_2021_6_2.html#104)
+                    - [ロジスティック回帰](R_training_2021_6_2.html#110)
+                        - [二項分布とは](R_training_2021_6_2.html#111)
+                        - [対データ](R_training_2021_6_2.html#114)
+                        - [２値データ](R_training_2021_6_2.html#122)
+                - [重回帰](R_training_2021_6_2.html#118)
+            - [どのモデルを選ぶのか](R_training_2021_6_2.html#128) 
+- 割合の検定
+    - [χ二乗検定](R_training_2021_6_2.html#133)
+
+### [よくあるエラー集](R_training_2021_7.html)

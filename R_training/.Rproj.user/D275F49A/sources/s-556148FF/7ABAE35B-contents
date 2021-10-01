@@ -1,0 +1,801 @@
+---
+title: "Rを用いたデータ解析の <br> 基礎とその実践"
+subtitle: "Step 3：データを解析しよう！ "
+author: "安齋 賢（東北大学 大学院生命科学研究科 分子行動分野） "
+date: "※石川由希博士（名古屋大学）が作製した資料を再構成したものです。<br>※資料の一部は岩嵜航博士（東北大学）が作製したものです。<br><br>（左右キーで進みます！）"
+output:
+  ioslides_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+.column-left50{
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+.column-right50{
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+.column-all{
+  float: right;
+  width: 100%;
+  text-align: center;
+}
+</style>
+
+
+## もう少し高度なデータ解析へ！
+
+### 1. 課題を見つける／仮説を立てる  
+### 2. 実験や観察をしてデータを集める  
+### 3. **データを整理する**  
+### 4. <span style="color: darkred;">**データを解析して仮説を検証する**</span>  
+<br>
+
+- 生データをプロットするだけではつまらない…
+- データの計算や解析もプログラミングで行おう！
+
+## データを解析しよう
+### データ解析には[dplyr](https://dplyr.tidyverse.org/)と[tidyr](https://tidyr.tidyverse.org/)が便利
+### **dplyrとtidyrとは**
+- tidyverseパッケージ群の一つ
+- シンプルな関数がたくさん
+- 繋げて使う（piping）といろんな解析ができる
+
+### **再現性が高まる！**
+### **同じデータ処理の繰り返しが楽！**
+### （３回同じ操作をするならプログラミングするべし！）
+
+
+## dplyrの使い方の基本！
+### **パイプ演算子（%>%）で指示を繋げて使う**
+```{r, echo = TRUE, message=FALSE}
+library(tidyverse)                 #読み込み
+result = diamonds %>%              #diamondsのデータから
+  select(carat, cut, price) %>%    #carat, cut, priceだけ抽出して
+  filter(carat > 2) %>%            #carat > 2のデータを抽出して
+  group_by(cut) %>%                #cutごとにグループにして
+  summarise_all(mean) %>%          #すべての平均値を計算する
+  print()                          #表示してみる
+```
+
+
+## さっそくやってみよう！
+### サンプルデータ（[penguins](https://allisonhorst.github.io/palmerpenguins/))で練習します
+![](figures/lter_penguins.png){width=620px}
+![](figures/logo.png){width=150px}
+
+## dplyrを使ってみよう！
+### 【復習】まずはサンプルデータ（[penguins](https://allisonhorst.github.io/palmerpenguins/))をインストール
+```{r, echo = TRUE, eval = FALSE}
+install.packages("palmerpenguins")    #インストールは最初の１回でOK
+```
+
+### 【復習】インストールしたら読み込み
+```{r, echo = TRUE}
+library(palmerpenguins)               #penguinsを読み込み
+library(tidyverse)                    #tidyverseを読み込み
+```
+
+
+## dplyrを使ってみよう！
+### 文法（１）データをざっくり眺める
+-  **head(【data.frameの名前】)**
+    - データフレームの<span style="color: darkred;">先頭7行</span>を表示する
+```{r, echo = TRUE}
+head(penguins)                        #penguinsの最初を見せて！
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（２）データの変数をリストアップする
+- **str(【data.frameの名前】)**
+- どの列を指定したらいいか調べるときに便利
+```{r, echo = TRUE}
+str(penguins)                         #penguinsデータの変数を確認
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（３）指定した列を抽出する
+- **select(【列名】)**
+    - 指定した<span style="color: darkred;">列名</span>の列を取り出す
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  select(species, bill_length_mm)        #species, bill_length_mm だけ抽出
+head(result)                             #表示
+```
+
+
+## dplyrを使ってみよう！
+### 文法（３）指定した列を抽出する
+- **select(【列番号】)**
+    -  <span style="color: darkred;">列番号</span>でも指定できる
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  select(1, 4)                           #1, 4列目を抽出
+head(result)                             #表示
+```
+
+
+## dplyrを使ってみよう！
+### 文法（３）指定した列を抽出する
+- **select(starts_with("【文字】"))**
+    -  <span style="color: darkred;">部分一致</span>でも指定できる
+    - 文字は""で囲むこと！
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  select(starts_with("b"))               #bで始まる列を抽出
+head(result)                             #表示
+```
+
+
+## dplyrを使ってみよう！
+### 文法（３）指定した列を抽出する
+- **select(-【列名】)**
+    -  <span style="color: darkred;">指定した以外（マイナス）</span>でも抽出できる
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  select(-island)                        #island以外を抽出
+head(result)                             #表示
+```
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- islandとbody_mass_gを抽出して表示してみよう
+- （次ページに答えがあります）
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- islandとbody_mass_gを抽出して表示してみよう
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  select(island, body_mass_g)            #islandとbody_mass_gを抽出
+head(result)                             #表示
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（４）特定の値の行を抽出する
+- **filter(【列名】 == 【値】)**
+    - 完全一致は == 
+    - 文字列は""で囲む
+```{r, echo = TRUE}
+result = penguins %>%                    #penguinsのデータから
+  filter(species == "Gentoo")            #ジェンツーペンギンだけを抽出
+head(result)                             #表示
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（４）特定の値の行を抽出する
+- **filter(【列名】 %in% c(【値1】, 【値2】))**
+    -  <span style="color: darkred;">複数の値</span>も抽出できる
+    - 複数の値はベクトルc(A, B, C)で与える
+```{r, echo = TRUE}
+result = penguins %>%                            #penguinsのデータから
+  filter(species %in% c("Chinstrap", "Gentoo"))  #ヒゲとジェンツーだけを抽出
+head(result)                                     #表示
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（４）特定の値の行を抽出する
+- **filter(【列名】 > 【値】)**
+    -  <span style="color: darkred;">比較演算子</span>も使える
+```{r, echo = TRUE}
+result = penguins %>%                #penguinsのデータから
+  filter(bill_length_mm < 45)        #bill_length_mmが45以下を抽出
+head(result)                         #表示
+```
+
+
+
+## うまく抽出できたかな…？
+### 【復習】試しにプロットしてみよう！
+### まずは**何もしていないデータ（penguins）**で！
+- data.frame...penguins
+- X軸...bill_length_mm
+- Y軸...bill_depth_mm
+- 色...species
+- （次ページに答えがあります）
+
+
+
+## うまく抽出できたかな…？
+### 【復習】試しにプロットしてみよう！
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = penguins) +  
+     geom_point(aes(x = bill_length_mm, y = bill_depth_mm, color = species))  
+gp                                    
+```
+
+
+## うまく抽出できたかな…？
+### 【復習】試しにプロットしてみよう！
+### 今度は**抽出したデータ（result）**で！
+- data.frame...result
+- X軸...bill_length_mm
+- Y軸...bill_depth_mm
+- 色...species
+- （次ページに答えがあります）
+
+
+## うまく抽出できたかな…？
+### 【復習】試しにプロットしてみよう！
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result) +  
+     geom_point(aes(x = bill_length_mm, y = bill_depth_mm, color = species))  
+gp                                    
+```
+
+- 45以下のデータだけになってますね！
+
+
+## dplyrを使ってみよう！
+### 文法（４）特定の値の行を抽出する
+- **filter(【列名A】 > 【値】, 【列名B】 > 【値】)**
+    -  <span style="color: darkred;">AND</span>(,)も使える
+```{r, echo = TRUE}
+result = penguins %>%                
+  filter(bill_length_mm < 45, bill_depth_mm > 16) 
+head(result)                         
+```
+
+
+## うまく抽出できたかな…？
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result) +  
+     geom_point(aes(x = bill_length_mm, y = bill_depth_mm, color = species))  
+gp                                    
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（４）特定の値の行を抽出する
+- **filter(【列名A】 > 【値】|【列名B】 > 【値】)**
+    -  <span style="color: darkred;">OR</span>(|)も使える
+```{r, echo = TRUE}
+result = penguins %>%                
+  filter(bill_length_mm < 40| bill_length_mm > 50) 
+head(result)                         
+```
+
+
+## うまく抽出できたかな…？
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result) +  
+     geom_point(aes(x = bill_length_mm, y = bill_depth_mm, color = species))  
+gp                                    
+```
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 2008年以降のDream島のメスの体重を種ごとに比較しよう
+    - どの列のどの値を取り出したらいいか？
+    - 何をX軸、Y軸にして可視化したらいいか？
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 2008年以降のDream島のメスの体重を種ごとに比較しよう
+- データ抽出は...
+    - year > 2007
+    - island == "Dream"
+    - sex == "female"
+- データ可視化は…
+    - X軸 = species
+    - Y軸 = body_mass_g
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE}
+result2 = penguins %>%                
+  filter(year > 2007, island == "Dream", sex == "female") 
+head(result2)                      
+```
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result2) +  
+     geom_point(aes(x = species, y = body_mass_g))  
+gp                      
+```
+
+- <span style="color: darkred;">できた人は、種ごとに色を付けてみよう！</span>
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 2008年以降のDream島のメスの体重を種ごとに比較しよう
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result2) +  
+     geom_point(aes(x = species, y = body_mass_g, color = species))  
+gp                      
+```
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 2008年以降のDream島のメスの体重を種ごとに比較しよう
+```{r, echo = TRUE, fig.height=3}
+gp = ggplot(data = result2) +  
+     geom_point(aes(x = species, y = body_mass_g, color = species),
+                position = position_jitter(width = 0.1))  #横にばらつかせる
+gp                    
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（５）新しい列を作る／既存の列の値を変更する
+- **mutate(【値】)**
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png){width=400px}
+
+```{r, echo = TRUE}
+result = penguins %>%                 
+  mutate(bill_length_mm/bill_depth_mm)  #(bill_length_mm)÷(bill_depth_mm)
+head(result)                            
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（５）新しい列を作る／既存の列の値を変更する
+- **mutate(【値】)**
+```{r, echo = TRUE}
+result = penguins %>%                 
+  mutate(bill_length_mm/bill_depth_mm)  #(bill_length_mm)÷(bill_depth_mm)
+head(result)    
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（５）新しい列を作る／既存の列の値を変更する
+- **mutate(【列名】=【値】)**
+    -  <span style="color: darkred;">列名</span>も指定できる
+    - 条件に応じた値も入れられる
+       - [mutate(if_else())とかmutate(case_when)とか](https://r-online-course.netlify.app/courses/r-introduction/s5-11/)
+```{r, echo = TRUE}
+result = penguins %>%                   
+  mutate(slenderness = bill_length_mm/bill_depth_mm)  #slendernessと名付ける
+head(result)                         
+```
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- flipper_length_mm/body_mass_gを計算し、ratioという新しい列として加えよう
+- （次ページに答えがあります）
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- flipper_length_mm/body_mass_gを計算し、ratioという新しい列として加えよう
+
+```{r, echo = TRUE}
+result = penguins %>%                                   
+  mutate(ratio = flipper_length_mm/body_mass_g)         #ratioと名付ける
+head(result)                                            
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(【関数名】(【列名】))**
+    - 使える関数はmean, median, sd, max, min, n, Q1, Q2...
+```{r, echo = TRUE}
+result = penguins %>%                   
+  summarize(mean(bill_length_mm))       #くちばしの長さを平均する
+head(result)                           
+```
+
+- <span style="color: darkred;">値にNAが含まれているとNAを返す</span>
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(【関数名】(【列名】))**
+    - <span style="color: darkred;">na.rm = TRUE</span>とするとNAを除外して計算してくれる
+```{r, echo = TRUE}
+result = penguins %>%                           
+  summarize(bill_length_mean = mean(bill_length_mm, na.rm = TRUE)) 
+                                                #くちばしの長さを平均する
+head(result)                                    
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(【関数名】(【列名】))**
+    - <span style="color: darkred;">group_by</span>を組み合わせるとすごく便利！
+```{r, echo = TRUE}
+result = penguins %>%                           
+  group_by(species) %>%                  #speciesごとにグループ分けして
+  summarize(bill_length_mean = mean(bill_length_mm, na.rm = TRUE), 
+            .groups     = "drop")        #グループわけ解除
+head(result)                                    
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(【関数名】(【列名】))**
+    - <span style="color: darkred;">複数の集計</span>もできる！
+```{r, echo = TRUE}
+result = penguins %>%                           
+  group_by(species) %>%                  #speciesごとにグループ分けして
+  summarize(bill_length_mean = mean(bill_length_mm, na.rm = TRUE),
+            bill_depth_median = median(bill_depth_mm, na.rm = TRUE), #中央値
+            .groups     = "drop")               
+head(result)                                    
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(【関数名】(【列名】))**
+    - <span style="color: darkred;">複数のグループ</span>もできる！
+```{r, echo = TRUE}
+result = penguins %>%                           
+  group_by(species, island) %>%     #species, islandごとにグループ分けして
+  summarize(bill_length_mean = mean(bill_length_mm, na.rm = TRUE),
+            bill_depth_median = median(bill_depth_mm, na.rm = TRUE), #中央値
+            .groups     = "drop")               
+head(result)                                    
+```
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（６）数値を要約する
+- **summarize(across(【列名のベクトル】, 【関数名】))**
+    - <span style="color: darkred;">across()</span>を使うと短く書ける
+    - 
+```{r, echo = TRUE}
+result = penguins %>%                           
+  group_by(species, island) %>%     #species, islandごとにグループ分けして
+  summarize(across(c(bill_length_mm, bill_depth_mm),  mean, na.rm = TRUE),
+            .groups     = "drop")            
+head(result)                                    
+```
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 種×性ごとのペンギンの体重の平均（mean）と分散（sd）を計算しよう
+- (次ページに答えがあります)
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 種×性ごとのペンギンの体重の平均（mean）と分散（sd）を計算しよう
+```{r, echo = TRUE}
+result2 = penguins %>%                           
+  group_by(species, sex) %>%     #species, sexごとにグループ分けして
+  summarize(body_mass_mean = mean(body_mass_g, na.rm = TRUE), #mean
+            body_mass_sd = sd(body_mass_g, na.rm = TRUE),     #sd
+            .groups     = "drop") 
+head(result2)                                    
+```
+
+
+
+## dplyrを使ってみよう！
+### ［練習問題］
+- 種ごとの体重の性差を棒グラフ±エラーバーで示そう
+    - [棒グラフ](https://ggplot2.tidyverse.org/reference/geom_bar.html)...geom_col(x, y)
+    - [エラーバー](https://ggplot2.tidyverse.org/reference/geom_linerange.html)...geom_errorbar(x, ymin, ymax)
+        - ymin...【平均の列名】-【分散の列名】
+        - ymax...【平均の列名】+【分散の列名】
+        - width...0.2
+    - 種ごとにfacet_wrap()かfacet_grid()でグラフを分ける
+        - [Step 2の p.25-26あたり](R_training_2021_3.html)
+    
+
+## dplyrを使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE, fig.height=2}
+gp = ggplot(data = result2) +  
+     geom_col(aes(x = sex, y = body_mass_mean)) +
+     geom_errorbar(aes(x = sex, 
+                       ymin = body_mass_mean - body_mass_sd, 
+                       ymax = body_mass_mean + body_mass_sd),
+                       width = 0.2) +
+     facet_wrap(~species)
+gp                    
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（７）複数のデータフレームを結合する
+### ［練習問題］ 準備として…
+- penguinsのspecies, bill_length_mmをデータフレームpenguins_1に格納
+- island, body_mass_gをデータフレームpenguins_2に格納
+- ちゃんとできているかhead()で確認
+
+
+
+## dplyrを使ってみよう！
+### 文法（７）複数のデータフレームを結合する
+### ［練習問題］ 準備として…
+```{r, echo = TRUE}
+penguins_1 = penguins %>%
+  select(species, bill_length_mm)
+head(penguins_1)
+```
+
+
+
+
+
+## dplyrを使ってみよう！
+### 文法（７）複数のデータフレームを結合する
+### ［練習問題］ 準備として…
+```{r, echo = TRUE}
+penguins_2 = penguins %>%
+  select(island, body_mass_g)
+head(penguins_2)
+```
+
+
+
+## dplyrを使ってみよう！
+### 文法（７）複数のデータフレームを結合する
+- **bind_cols(【データフレーム１】, 【データフレーム２】)**
+- **bind_rows(【データフレーム１】, 【データフレーム２】)**
+    - <span style="color: darkred;">横</span>につなげるならbind_cols
+    - <span style="color: darkred;">縦</span>につなげるならbind_rows
+```{r, echo = TRUE}
+penguins_merge = bind_cols(penguins_1, penguins_2)
+head(penguins_merge)
+```
+
+
+
+
+
+## dplyrの文法まとめ
+- 文法（１）**head()** ...データを見る
+- 文法（２）**str()**...変数のリストアップ
+- 文法（３）**select()**...列の抽出
+- 文法（４）**filter()**...特定の値の行の抽出
+- 文法（５）**mutate()**...新たな行を作る
+- 文法（６）**summarize()**...数値の要約
+- 文法（７−１）**bind_cols()**...横につなげる
+- 文法（７−２）**bind_rows()**...縦につなげる
+<br>
+- **他にもエクセルでできること全て + さらに複雑なこともできる**
+- 知りたかったらこのあたり
+    - [R自学自習の基礎知識（Heavy Watal）](https://heavywatal.github.io/rstats/dplyr.html)
+    - [RとRstudio入門](https://kazutan.github.io/JSSP2018_spring/index.html)
+
+
+## いよいよ難関の...tidyrを使ってみよう！
+### データの変形ができる最強ツール
+- 他人のデータの多くは<span style="color: darkred;">そのまま使えない…</span>
+- 手でコピペして新たなcsvを作るのはナンセンス
+- そんなときは[tidyr](https://tidyr.tidyverse.org/)で一気に変換！
+- ちょっとハードルは高いけど、使えるようになると<span style="color: darkred;">最強</span>です
+
+
+
+## いよいよ難関の…tidyrを使ってみよう！
+### tidyrでできること
+- 縦長←→横広の変換
+
+![](figures/pivot_longer.png){width=600px} 
+
+- セルの分割/結合
+
+![](figures/unite.png){width=600px} 
+
+- などなど...
+
+
+
+## tidyrを使ってみよう！{.smaller}
+### 文法（８）縦長のデータを横広に
+- **pivot_wider(names_from = 【新しく列名になる列の名前】, values_from = 【動かしたい値の列の名前】)**
+```{r, echo = TRUE}
+penguins_wide = penguins %>%
+  pivot_wider(names_from = year,         #yearの列を横に並べて列名に
+              values_from = body_mass_g) #値にはbody_mass_g列の値が入る
+head(penguins_wide)
+```
+
+- 詳しい使い方は[こちら](https://heavywatal.github.io/rstats/tidyr.html)を参照
+
+
+
+
+## tidyrを使ってみよう！{.smaller}
+### 文法（８）横広のデータを縦長に
+- **pivot_longer(cols = 【動かしたい値が含まれている列】, names_to = 【元々列名だったものを入れる列の名前】, values_to = 【値の移動先の列名】)**
+```{r, echo = TRUE}
+penguins_long = penguins_wide %>%
+  pivot_longer(cols = c(`2007`, `2008`, `2009`), #これらを縦に並べて値に
+               names_to = "YEAR",                #新たな列名はYEAR（文字列なので""で囲む）
+               values_to = "BODY_MASS_G")        #元々の値を入れる列名はBODY_MASS_Gに
+head(penguins_long)
+```
+
+- 詳しい使い方は[こちら](https://heavywatal.github.io/rstats/tidyr.html)を参照
+
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+- くちばしの長さと幅を比較するグラフを書きたいとき...
+    - 比較する値はX軸に示したい
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png){width=480px}
+
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+- くちばしの長さと幅を比較するグラフを書きたいとき...
+    - まずは元データがどうだったか確認する
+    - くちばしの長さと幅を直接X軸に指定できない...
+```{r, echo = TRUE}
+head(penguins)                        #penguinsデータを確認
+```
+
+
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+- くちばしの長さと幅を比較するグラフを書きたいとき...
+    - こんな形だったら、x = PARTS, y = VALUE で指定できる
+```{r, echo = FALSE}
+penguins2 = penguins %>%
+  select(species, bill_length_mm, bill_depth_mm) %>%
+  pivot_longer(cols = c(bill_length_mm, bill_depth_mm), names_to = "PARTS", values_to = "VALUE") %>%
+  print
+```
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+- くちばしの長さと幅を比較するグラフを書きたいとき...
+    - pivod_longerでpenguinsを変換しよう！
+    - **pivot_longer(cols = 【動かしたい値が含まれている列】, names_to = 【元々列名だったものを入れる列の名前】, values_to = 【値の移動先の列名】)**
+        - もともとの列名を入れる列の名前..."PARTS"
+        - 値の移動先の列名..."VALUE"
+        - 動かしたい列はどれ？
+            - 複数はベクトルc(【列名１】, 【列名２】)で指定
+
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE}
+penguins2 = penguins %>%                                  #penguins2に格納
+  pivot_longer(cols = c(bill_length_mm, bill_depth_mm),   #列を指定
+               names_to = "PARTS", values_to = "VALUE")   #新たな列の名前
+head(penguins2)
+```
+
+- できたらggplot2でグラフを作ろう！（geom_pointで）
+
+
+
+## tidyrを使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE, fig.height=2.5}
+gp = ggplot(data = penguins2) +
+  geom_point(aes(x = PARTS, y = VALUE)) +
+  facet_wrap(~species)
+gp
+```
+
+
+
+## tidyrを使ってみよう！{.smaller}
+### 文法（９）文字列カラムを複数に分割
+- **separate(col = 【切り分けたい列の名前】, into = 【新しい列名】, sep = 【セパレータ】)**
+    - セパレータを指定しないと非アルファベットで切れる
+    - 整数を渡すと位置で切れる（"A4"を1Lで切ると"A"と"4"に）
+    - 詳しい使い方は[こちら](https://heavywatal.github.io/rstats/tidyr.html)を参照
+```{r, echo = TRUE}
+penguins2_sep = penguins2 %>%
+  separate(col = PARTS, into = c("A", "B", "C"), sep = "_") 
+　　　　　　　　　　　　　　　　　　　　      　　#intoは文字列ベクターで
+head(penguins2_sep)
+```
+
+
+
+## tidyrを使ってみよう！
+### 冗長だったX軸の値もスッキリ！
+```{r, echo = TRUE, fig.height=2.5}
+gp = ggplot(data = penguins2_sep) +
+  geom_point(aes(x = B, y = VALUE)) +
+  facet_wrap(~species)
+gp
+```
+
+
+
+## tidyrを使ってみよう！{.smaller}
+### 文法（１０）複数の文字列カラムを結合
+- **unite(col = 【新しい列名】, 【結合したい列名をベクターで】, sep = 【セパレータ】)**
+    - 詳しい使い方は[こちら](https://heavywatal.github.io/rstats/tidyr.html)を参照
+```{r, echo = TRUE}
+penguins2_unite = penguins2_sep %>%
+  unite(col = "PARTS", c(A, B, C), sep = ".") 
+head(penguins2_unite)
+```
+
+
+
+## tidyrの文法まとめ
+- 文法（８−１）**pivod_wider()** ...縦長を横広に
+- 文法（８−２）**pivod_longer()**...横広を縦長に
+- 文法（９）**separate()**...カラムを分割
+- 文法（１０）**unite()**...カラムを結合
+<br>
+<br>
+- 他にもたくさん便利な機能がある
+- 知りたかったらこのあたり
+    - [R自学自習の基礎知識（Heavy Watal）](https://heavywatal.github.io/rstats/dplyr.html)
+
+
+## dplyrとtidyrのまとめ
+### **データを解析したいな**
+- まずはどんなグラフを描きたいか考えよう
+- 次にどんなdata.frameがほしいか考えよう
+
+### **どうやるんだっけ**
+- 規則性のある形ならだいたいなんとかなる。
+- 具体的な方法を忘れたらググる！前のコードを使い回す！
+- <span style="color: darkred;">めっちゃエラーが出るんですけど…</span>
+    - 凡ミスがないか確認、エラーコードもよく読む
+    - 経験者に相談
+    - [よくあるエラー集](R_training_2021_7.html)
+
+###  **→[Step 4：自分のデータを扱おう](R_training_2021_5.html)**

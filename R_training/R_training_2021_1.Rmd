@@ -1,0 +1,74 @@
+---
+title: "Rを用いたデータ解析の <br> 基礎とその実践"
+subtitle: "Step 0：はじめに（R環境のインストール） "
+author: "安齋 賢（東北大学 大学院生命科学研究科 分子行動分野） "
+date: "※石川由希博士（名古屋大学）が作製した資料を再構成したものです。<br>※資料の一部は岩嵜航博士（東北大学）が作製したものです。<br><br>（左右キーで進みます！）"
+output:
+  ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 勉強会開始までに行うこと
+- <span style="color: darkred;">**各自のPCで、RとR Studioのインストールと初期設定をする**</span>
+- 設定は次ページ以降の参考WEBサイトをよく読んで行うこと
+- 順番通り実行すること
+- 安定したインターネット接続が必要
+- 時間がかかるため必ず実習前に終わらせておくこと！
+    - 授業の直前にインストールしようとしても間に合わない
+    - ネットの接続速度によってはダウンロードだけで１時間以上かかる
+    - 全部のプロセスは3~4時間かかるかも
+- インストールの問題は様々なので個別に相談してください
+- <span style="color: darkred;">**勉強会は全員のインストールが完了した状態で始めます**</span>
+
+
+
+## 勉強会開始までに行うこと (**Windows**)
+- [矢内勇生先生のサイトの手順に従う（Windows編）](https://yukiyanai.github.io/jp/resources/)
+1. ファイル名拡張子を表示する
+2. ホームディレクトリ（フォルダ）の名前をアルファベットにする（<span style="color: darkred;">ユーザー名を日本語にしている人は必ず変更すること！</span>）
+3. いわゆる「OneDrive問題」を解決する（詳細は上記サイト）
+4. Rのインストール
+5. R Studioのインストール
+
+    - 1~3を飛ばすと実習中にトラブルが発生します
+    - <span style="color: darkred;">必ず順番通り実施すること</span>
+    - 今後を考えるとWSL上のUbuntuで動かすのもあり <br> 参照：[Rで計量政治学入門](https://shohei-doi.github.io/quant_polisci/wsl-rstudio.html)など
+
+## 勉強会開始までに行うこと (**Mac**)
+- [矢内勇生先生のサイトの手順に従う（macOS編）](https://yukiyanai.github.io/jp/resources/)
+1. ファイル名拡張子を表示する
+2. Xcodeのインストール
+3. Command Line Toolsのインストール
+4. XQuartzのインストール
+5. Rのインストール
+6. R Studioのインストール
+
+- パッケージ管理ツール（Homebrew）を使った導入も可能
+    
+    - Rに限らず様々なツールが簡単に導入できる
+    - HomebrewやRに関する情報はWeb上にたくさんある
+    - [この辺](https://datawokagaku.com/startr/)は参考になるかも
+
+
+## 勉強会全体の流れ (1/2)
+### Rを用いたデータ解析演習
+- [Step 1：Rの基本をマスターしよう！](R_training_2021_2.html)
+- [Step 2：データを可視化しよう！](R_training_2021_3.html)
+- [Step 3：データを解析しよう！](R_training_2021_4.html)
+- [Step 4：自分のデータを扱おう！](R_training_2021_5.html)
+- [Step 5：統計解析をしよう！](R_training_2021_6.html)
+
+## 実習全体のスケジュール (2/2)
+### 行動データ解析の実践（仮）
+
+- 近づき行動実験動画の解析
+    - UMA trackerを用いたトラッキング
+    - DeepLabCutを用いたトラッキング
+
+- Rを用いて作図・統計解析してみよう！
+
+## さて、いよいよ始めよう！
+###  **→[Step 1: Rの基本をマスターしよう](R_training_2021_2.html)**

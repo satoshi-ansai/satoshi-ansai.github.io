@@ -1,0 +1,426 @@
+---
+title: "Rを用いたデータ解析の <br> 基礎とその実践"
+subtitle: "Step 2：データを可視化しよう！ "
+author: "安齋 賢（東北大学 大学院生命科学研究科 分子行動分野） "
+date: "※石川由希博士（名古屋大学）が作製した資料を再構成したものです。<br>※資料の一部は岩嵜航博士（東北大学）が作製したものです。<br><br>（左右キーで進みます！）"
+output:
+  ioslides_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## いよいよデータ解析の本番へ…
+
+### 1. 課題を見つける／仮説を立てる  
+### 2. 実験や観察をしてデータを集める  
+### 3. **データを整理する**  
+### 4. <span style="color: darkred;">**データを解析して仮説を検証する**</span>  
+<br>  
+
+- 整理されたデータを可視化する練習からはじめよう！
+
+
+## データを可視化するのはとても大事！
+### 数値を羅列してもよくわからない...
+- よく用いられるのが平均値±エラーバー  
+
+### けど平均値だけ見て可視化を怠ると構造を見逃すことも
+- 同じ平均値と分散を持つデータ（↓）
+
+![](figures/dinosequentialsmaller.gif){width=600px}
+<font size="4">https://www.autodeskresearch.com/publications/samestats/ </font>
+
+
+## 「いきなり棒グラフ」から卒業しよう！
+### 平均値±分散ではなく、まず**生データをプロット**する！
+- Y軸
+    - 調べたい値（応答変数／目的変数／従属変数）
+    - 複数ある場合はグラフを並べたりすることも
+- X軸：Yのばらつきの原因となる値（説明変数／独立変数）
+- グラフの形もいろいろ…
+    - 点...全ての情報を漏らさず眺められる。まずこれ。
+    - 棒（平均±分散）...正規性のあるデータ以外では非推奨。
+    - 箱ヒゲ...分散が偏っているデータならこれ？でも２峰型とかは表現できない。
+    - バイオリン...いろんな分布が表現できる。でも中央値とかは表現できない。
+
+
+## ggplot2できれいなグラフを簡単に！
+### グラフの見せ方の検討もRでやると捗るよ！
+![](figures/2021-03-30 15.58.45.jpg){width=600px}
+
+## ggplot2できれいなグラフを簡単に！
+### **ggplot2とは**
+- tidyverseパッケージ群の一つ
+- 単にいろんなグラフを「描ける」だけじゃない！
+- 「一貫性のある文法で合理的に描ける」パッケージ
+
+```{r, echo = FALSE, message=FALSE, fig.height=3.5}
+library(tidyverse)
+gp2 = ggplot(data = diamonds) +       #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color))
+gp2                                   #gp2を見せて                      
+```
+
+
+## ggplot2できれいなグラフを簡単に！
+### **何がそんなに良いの？**
+- レイヤー式のグラフ構成（設定を足していく+）
+- 直感的にグラフを描ける文法
+- 初期設定からグラフが美しい
+
+![](figures/ggplot2.jpg){width=540px}
+
+- x軸は列F, y軸は列A, 色は列F, サイズは列Aで！と書くだけ
+- 細かい設定はお好みで…
+
+## ggplot2を使ってみよう！
+### サンプルデータ（diamonds）を使ってグラフを描こう
+```{r, echo = TRUE, message=FALSE}
+library(tidyverse)                   #使う前にパッケージを読み込む
+head(diamonds)                       #まずはdiamondsの中身を確認
+```
+- ダイアモンドに関するデータが入ってます！
+- １行１個、各ダイヤの形質値（carat, cut, color...）が列ごとに
+
+## ggplot2を使ってみよう！
+### サンプルデータ（diamonds）を使ってグラフを描こう
+- carat（カラット）の分布を可視化しよう
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp = ggplot(data = diamonds) +       #diamondsを使ったグラフをgpに格納
+     geom_histogram(aes(x = carat))  #グラフはヒストグラムでx軸はcarat
+gp                                   #gpを見せて
+```
+
+
+## ggplot2を使ってみよう！
+### 文法を理解するために…
+- carat（カラット）を価格（price）に変えてみよう
+
+
+## ggplot2を使ってみよう！
+### 文法を理解するために…
+- carat（カラット）を価格（price）に変えてみよう
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp = ggplot(data = diamonds) +       #diamondsを使ったグラフをgpに格納
+     geom_histogram(aes(x = price))  #グラフはヒストグラムでx軸はprice
+gp                                   #gpを見せて
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（１）
+- **aes(x =【X軸にしたい列名】, y = 【Y軸にしたい列名】)**
+    - X軸しか必要なければYは省略できる
+- aesはaesthetics（エステティックス, 美学）
+- **X, Y軸を何にするか**を考えるのが可視化の最も重要な一歩
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］
+- 深さ（depth）の分布を可視化しよう！
+- （次ページに答えがあります）
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］
+- 深さ（depth）の分布を可視化しよう！
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp = ggplot(data = diamonds) +       #diamondsを使ったグラフをgpに格納
+     geom_histogram(aes(x = depth))  #グラフはヒストグラムでx軸はprice
+gp                                   #gpを見せて
+```
+
+
+## ggplot2を使ってみよう！
+### 文法を理解するために…
+- ヒストグラム（histogram）を密度（density）に変えてみよう
+
+
+## ggplot2を使ってみよう！
+### 文法を理解するために…
+- ヒストグラム（histogram）を密度（density）に変えてみよう
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp = ggplot(data = diamonds) +       #diamondsを使ったグラフをgpに格納
+     geom_density(aes(x = price))    #グラフはヒストグラムでx軸は密度分布
+gp                                   #gpを見せて
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（２）
+- **geom_【グラフのスタイル】**
+    - 棒グラフ（geom_col）
+    - 箱ひげグラフ（geom_boxplot）
+    - ２次元ヒートマップ（geom_bin2d）
+    - ヒストグラム（geom_histogram）
+    - エラーバー（geom_errorbar）
+    - 地図（geom_map）
+    - 散布図（geom_point）
+    - 帯グラフ（geom_ribbon）　　　　などなど…
+
+
+## ggplot2を使ってみよう！
+### [公式サイト](https://ggplot2.tidyverse.org/index.html)の[Reference](https://ggplot2.tidyverse.org/reference/index.html)にいろんな例がある
+![](figures/data-visualization-2.1.jpg){width=700px}
+
+
+## ここまでの文法のまとめ
+- **data = 【データフレームの名前】**
+- **geom_【グラフのスタイル】**
+- **aes(x =【X軸にしたい列名】, y = 【Y軸にしたい列名】)**
+```{r, echo = TRUE, eval=FALSE}
+gp = ggplot(data = AAA) + 
+     geom_BBB(aes(x = XXX, y = YYY)) 
+gp   
+```
+
+### ［練習問題］以下のグラフを描こう
+- データはdiamonds
+- スタイルは散布図（geom_point）
+- X軸はカラット（carat）、Y軸は価格（price）
+- 図はgp2に格納（gp2 = …で始める）
+- （次ページに答えがあります）
+
+
+## ggplot2を使ってみよう！
+```{r, echo = TRUE, message=FALSE, fig.height=4}
+gp2 = ggplot(data = diamonds) +             #図をgp2に格納する
+      geom_point(aes(x = carat, y = price)) #散布図で、X軸はcarat、Y軸はprice
+gp2                                         #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（３）色で値を表現する → **aes(color = 【列】)**
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +             #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = cut)) 
+                     #散布図で、X軸はcarat、Y軸はprice、色はcut
+gp2                                         #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（３）色で値を表現する → **aes(color = 【列】)**
+### ［練習問題］好きな値を色で表現しよう
+### 　ヒント：前のコードをコピペして、color=【列】を変える
+```{r, echo = TRUE, message=FALSE, fig.height=4}
+head(diamonds)                       #まずはdiamondsの中身を確認
+```
+
+
+## ggplot2を使ってみよう！
+### numericな値を指定すると連続的な色に
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +             #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = carat)) 
+                    #散布図で、X軸はcarat、Y軸はprice、色はcarat
+gp2                                         #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### factorな値を指定すると離散的な色に
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +             #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) 
+                    #散布図で、X軸はcarat、Y軸はprice、色はcolor
+gp2                                         #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（４）グラフを分ける → **+ facet_wrap(~ 【列】)**
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +             #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) +
+      facet_wrap(~ color)                   #colorごとにグラフを分ける
+gp2                                         #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（４）グラフを分ける → **+ facet_grid（【列】~ 【列】)**
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +       #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) +
+      facet_grid(cut ~ color)         #cutとcolorごとにグラフを分ける
+gp2                                   #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（４）グラフを分ける → **+ facet_grid（.~ 【列】)**
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +       #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) +
+      facet_grid(. ~ color)           #colorごとにグラフを分ける
+gp2                                   #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］
+- facet_wrapを使ってcutごとにグラフを分けよう
+- facet_gridを使ってcutごとにグラフを分けよう
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +       #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) +
+      facet_wrap( ~ cut)           #cutごとにグラフを分ける
+gp2                                   #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］
+```{r, echo = TRUE, message=FALSE, fig.height=3.5}
+gp2 = ggplot(data = diamonds) +       #図をgp2に格納する
+      geom_point(aes(x = carat, y = price, color = color)) +
+      facet_grid(. ~ cut)           #cutごとにグラフを分ける
+gp2                                   #gp2を見せて                      
+```
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］以下のグラフを描こう
+- データはdiamonds
+- スタイルは箱ひげ図（geom_boxplot）
+- X軸はカット（cut）、Y軸はカラット（carat）
+- cutごとに色を付ける
+- 図はgp3に格納（gp3 = …で始める）
+- （次ページに答えがあります）
+
+
+## ggplot2を使ってみよう！
+### ［練習問題］以下のグラフを描こう
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp3 = ggplot(data = diamonds) +                           #図をgp3に格納する
+      geom_boxplot(aes(x = cut, y = carat, color = cut))  #xはcut, yはcarat
+gp3                                                       #gp2を見せて      
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（５）**テーマ（theme_）で全体の雰囲気を変える**
+```{r, echo = TRUE, message=FALSE, fig.height=3}
+gp3 = ggplot(data = diamonds) +                
+      geom_boxplot(aes(x = cut, y = carat)) + 
+      theme_classic()                  #テーマはクラシック
+gp3                                                     
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（５）**テーマ（theme_）で全体の雰囲気を変える**
+
+- [公式サイト](https://ggplot2.tidyverse.org/reference/ggtheme.html)にリストがある
+- theme_bw（白黒）
+- theme_dark（黒背景）
+- theme_minimal（シンプル）
+- theme_void（線なし）
+
+## ggplot2を使ってみよう！
+### 文法（６）**線を特定の色にする（aesの外で設定）**
+- 色名のリストは[ここ](http://sape.inf.usi.ch/quick-reference/ggplot2/colour)
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+gp3 = ggplot(data = diamonds) +                
+      geom_boxplot(aes(x = cut, y = carat), color = "red") + #線は赤
+      theme_classic()                 
+gp3                                                     
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（６）**箱を特定の色にする（aesの外で設定）**
+- 色名のリストは[ここ](http://sape.inf.usi.ch/quick-reference/ggplot2/colour)
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+gp3 = ggplot(data = diamonds) +                
+      geom_boxplot(aes(x = cut, y = carat), fill = "red") + #箱は赤
+      theme_classic()                 
+gp3                                                     
+```
+
+
+## ggplot2を使ってみよう！
+### 文法（６）**箱を値に応じた色にする（aesの中で設定）**
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+gp3 = ggplot(data = diamonds) +                
+      geom_boxplot(aes(x = cut, y = carat, color = cut)) + #線の色はcut
+      theme_classic()                 
+gp3                                                     
+```
+
+
+## ggplot2を使ってみよう！{.smaller}
+### 文法（７）**軸の範囲やタイトルを変える**
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+gp3 = ggplot(diamonds) + 
+geom_boxplot(aes(y = carat, x = cut, color = cut)) +
+theme_classic() +
+coord_cartesian(ylim = c(-1, 6)) +   
+                      #直角座標（Cartesian coordinates）のy軸は-1から6まで
+labs(title = "Diamonds", x = "Size (carat)", y = "Price (USD)")
+                      #タイトルや軸のラベル（labs）を設定
+gp3
+```
+
+
+
+## ggplot2を使ってみよう！{.smaller}
+### 文法（７）**文字の大きさなどを細かく設定（theme）**
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+gp3 = ggplot(diamonds) + 
+geom_boxplot(aes(y = carat, x = cut)) +
+theme_classic() + 
+theme(axis.title.x = element_text(size = 20), #X軸のタイトル
+      axis.title.y = element_text(size = 20), #Y軸のタイトル
+      axis.text.x = element_text(size = 15, angle = 30, hjust = 1),
+                                              #X軸の文字
+      axis.text.y = element_text(size = 15))　#Y軸の文字
+gp3
+```
+
+
+## ggplot2を使ってみよう！
+### 基本的な書き方さえ理解できれば文法は覚えなくていい
+- 公式サイトや解説サイトを見に行こう
+    - [ggplot2 公式サイト（英語）](https://ggplot2.tidyverse.org/)
+    - [ggplot2 — きれいなグラフを簡単に合理的に（日本語）
+](https://heavywatal.github.io/rstats/ggplot2.html)
+    - [ggplot2による可視化入門（日本語）](https://kazutan.github.io/fukuokaR11/intro_ggplot2.html)
+    - [ggplot2入門 [基礎編]（日本語）](https://www.jaysong.net/ggplot_intro2/)
+    
+
+## ggplot2を使ってみよう！
+### 文法（８）**図をファイルとして保存 ggsave()**
+```{r, echo = TRUE, message=FALSE, fig.height=2.5}
+ggsave("fig1.png", gp3, width = 4, height = 3, dpi = 300) 
+```
+
+- 図のファイル名
+- 保存したい図を格納した変数
+- 図の幅
+- 図の高さ
+- 図の解像度
+
+
+
+## ggplot2のまとめ
+### **こんなグラフを描きたいな**
+- だいたいなんでもggplot2でできるよ
+
+### **どうやるんだっけ**
+- レイヤーを足す
+    - pg = ggplot(でーた) + geom_なんとか(x, y) + theme_*()
+- 保存 ggsave()
+- 忘れるたびにググる。徐々に身につく。  
+
+### **ちゃんと描こうと思うと結構な長さになるね…**
+- そうだけど、一度書いたプログラムはどこでも使い回せるよ！
+
+###  **→[Step 3：データを解析しよう](R_training_2021_4.html)**
