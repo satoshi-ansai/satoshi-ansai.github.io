@@ -623,14 +623,35 @@ def layout(lang, page, title, body, desc=""):
 """
 
 
+# Homepages linked from the affiliation lines; applied to the escaped text.
+AFFIL_LINKS = {
+    "ja": [
+        ("理学部附属臨海実験所", "https://www.science.okayama-u.ac.jp/~rinkai/"),
+        ("岡山大学", "https://www.okayama-u.ac.jp/"),
+    ],
+    "en": [
+        ("Ushimado Marine Institute", "https://www.science.okayama-u.ac.jp/~rinkai/en/index.html"),
+        ("Okayama University", "https://www.okayama-u.ac.jp/en/"),
+    ],
+}
+
+def affil(text, lang):
+    """Escape an affiliation line and link the institutions in it."""
+    out = esc(text)
+    for name, url in AFFIL_LINKS[lang]:
+        if name in out:
+            out = out.replace(name, f'<a href="{url}">{name}</a>', 1)
+    return out
+
+
 def profile_contact_html(lang):
     """Postal-style contact block for the Profile page."""
     c = CONTENT[lang]
     name = c["name"] if lang == "ja" else "Satoshi Ansai"
     if lang == "ja":
-        lines = [esc(c["address"]), esc(c["affiliation"][0]), esc(name)]
+        lines = [esc(c["address"]), affil(c["affiliation"][0], lang), esc(name)]
     else:  # English convention: name, institution, address
-        lines = [esc(name), esc(c["affiliation"][0]), esc(c["address"])]
+        lines = [esc(name), affil(c["affiliation"][0], lang), esc(c["address"])]
     lines += [f"Tel: {esc(c['tel'])}", f"E-mail: {mail_html(c['email'])}"]
     return "<address>" + "<br>".join(lines) + "</address>"
 
@@ -660,7 +681,7 @@ document.querySelectorAll('.mail[data-m]').forEach(function (el) {
 
 def contact_html(lang, address=True):
     c = CONTENT[lang]
-    lines = [esc(c["title"])] + [esc(a) for a in c["affiliation"]]
+    lines = [esc(c["title"])] + [affil(a, lang) for a in c["affiliation"]]
     if address:
         lines.append(esc(c["address"]))
     if c.get("tel"):
