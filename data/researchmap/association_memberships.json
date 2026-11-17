@@ -1,0 +1,82 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/association_memberships?limit=1000&format=json&start=1",
+    "@type": "association_memberships",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 4,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/association_memberships/8203016",
+            "@type": "association_memberships",
+            "@reverse": "https://api.researchmap.jp/sansai/association_memberships",
+            "rm:id": "8203016",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:21:47Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T14:21:48Z",
+            "academic_society_name": {
+                "ja": "日本動物学会",
+                "en": "THE ZOOLOGICAL SOCIETY OF JAPAN"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/association_memberships/27183180",
+            "@type": "association_memberships",
+            "@reverse": "https://api.researchmap.jp/sansai/association_memberships",
+            "rm:id": "27183180",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:33:02Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:33:02Z",
+            "academic_society_name": {
+                "ja": "日本水産学会"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/association_memberships/27183176",
+            "@type": "association_memberships",
+            "@reverse": "https://api.researchmap.jp/sansai/association_memberships",
+            "rm:id": "27183176",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:32:52Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:32:52Z",
+            "academic_society_name": {
+                "ja": "日本生態学会"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/association_memberships/27182923",
+            "@type": "association_memberships",
+            "@reverse": "https://api.researchmap.jp/sansai/association_memberships",
+            "rm:id": "27182923",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:32:39Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:32:39Z",
+            "academic_society_name": {
+                "ja": "日本進化学会"
+            }
+        }
+    ]
+}

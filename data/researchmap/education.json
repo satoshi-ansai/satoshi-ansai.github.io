@@ -1,0 +1,108 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/education?limit=1000&format=json&start=1",
+    "@type": "education",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 3,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/education/39952249",
+            "@type": "education",
+            "@reverse": "https://api.researchmap.jp/sansai/education",
+            "rm:id": "39952249",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2022-09-13T08:57:41Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2022-09-13T08:57:41Z",
+            "from_date": "2013-04",
+            "to_date": "2016-03",
+            "rm:institution_code": "0280030004",
+            "affiliation": {
+                "ja": "京都大学",
+                "en": "Kyoto University"
+            },
+            "department": {
+                "ja": "大学院農学研究科",
+                "en": "Graduate School of Agriculture"
+            },
+            "course": {
+                "ja": "応用生物科学専攻",
+                "en": "Division of Applied Biosciences"
+            },
+            "note": {
+                "ja": "博士後期課程"
+            },
+            "address_country": "JPN"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/education/32425269",
+            "@type": "education",
+            "@reverse": "https://api.researchmap.jp/sansai/education",
+            "rm:id": "32425269",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:58:26Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2022-09-13T08:56:39Z",
+            "from_date": "2011-04",
+            "to_date": "2013-03",
+            "rm:institution_code": "0280030004",
+            "affiliation": {
+                "ja": "京都大学",
+                "en": "Kyoto University"
+            },
+            "department": {
+                "ja": "大学院農学研究科",
+                "en": "Graduate School of Agriculture"
+            },
+            "course": {
+                "ja": "応用生物科学専攻",
+                "en": "Division of Applied Biosciences"
+            },
+            "note": {
+                "ja": "修士課程"
+            },
+            "address_country": "JPN"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/education/32425184",
+            "@type": "education",
+            "@reverse": "https://api.researchmap.jp/sansai/education",
+            "rm:id": "32425184",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:50:01Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2021-05-06T07:50:01Z",
+            "from_date": "2007-04",
+            "to_date": "2011-03",
+            "rm:institution_code": "0280507001",
+            "affiliation": {
+                "ja": "京都大学",
+                "en": "Kyoto University"
+            },
+            "department": {
+                "ja": "農学部",
+                "en": "Faculty of Agriculture"
+            },
+            "course": {
+                "ja": "資源生物科学科",
+                "en": "Division of Bioresource Science"
+            },
+            "address_country": "JPN"
+        }
+    ]
+}

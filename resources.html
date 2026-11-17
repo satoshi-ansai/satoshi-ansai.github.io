@@ -1,116 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources | Satoshi Ansai</title>
+<meta name="description" content="真骨魚類、特に東・東南アジアで著しく多様化したメダカ科魚類を主なモデルとして、表現型の多様性を生み出すゲノム領域や遺伝子を、集団ゲノム解析とゲノム編集を組み合わせて研究しています。">
+<link rel="alternate" hreflang="en" href="en/resources.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">Satoshi Ansai</a>
+    <nav><a href="index.html">Top</a><a href="profile.html">Profile</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="resources.html" aria-current="page">Resources</a><a class="lang" href="en/resources.html" hreflang="en">EN</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1 class="page">Resources</h1>
 
-    <title>Resources | Satoshi Ansai</title>
+<section>
+  <h2>プロトコル</h2>
+  <ul class="res">
+    <li><a href="files/CRISPRv3_jp.pdf">CRISPR/Cas9 Protocol v3.0</a> <span class="meta">日本語 · PDF 247KB</span>
+      <p>完全にプラスミドフリーで sgRNA を合成できるプロトコルです。RNA 合成に使用する試薬等も変更しています。</p></li>
+    <li><a href="files/CRISPR_jp.pdf">CRISPR/Cas9 Protocol v1.4.1</a> <span class="meta">日本語 · PDF 166KB · <a href="https://doi.org/10.1242/bio.20148177">Ansai &amp; Kinoshita, 2014</a></span>
+      <p>オリゴヌクレオチドのクローニングによって sgRNA を作製する旧プロトコルです。</p></li>
+    <li><a href="files/CRISPR_en.pdf">CRISPR/Cas9 Protocol</a> <span class="meta">英語 · PDF 1.5MB · <a href="https://doi.org/10.1242/bio.20148177">Ansai &amp; Kinoshita, 2014</a>; <a href="https://doi.org/10.1111/dgd.12104">Ansai et al., 2014</a> (HMA)</span>
+      <p>英語版プロトコルです。変異検出法についても詳しく記載しています。</p></li>
+    <li><a href="files/TALEN_protocol.pdf">TALEN Protocol v1.0</a> <span class="meta">日本語 · PDF 1.8MB · <a href="https://doi.org/10.1534/genetics.112.147645">Ansai et al., 2013</a></span>
+      <p>2013年以降更新していないため、変異検出など一部の情報は古くなっています。</p></li>
+  </ul>
+</section>
+<section>
+  <h2>sgRNA 設計用ファイル</h2>
+  <ul class="res">
+    <li><a href="files/sgRNA_PCRoligo.xlsx">sgRNA_PCRoligo.xlsx</a> <span class="meta">Excel · 10KB</span>
+      <p>PCR によるテンプレート合成（v3.0 等）用の sgRNA オリゴ設計支援シートです。</p></li>
+    <li><a href="files/sgRNA_design.xls">sgRNA_design.xls</a> <span class="meta">Excel · 35KB</span> /
+        <a href="files/sgRNA_design.ods">sgRNA_design.ods</a> <span class="meta">OpenOffice · 22KB</span>
+      <p>pDR274 クローニング用のオリゴ設計支援ツール（マクロ使用）です。</p></li>
+  </ul>
+</section>
+<section>
+  <h2>ベクター</h2>
+  <ul class="res">
+    <li><strong>pCS2+hSpCas9</strong> <span class="meta"><a href="files/pCS2+hSpCas9.pdf">Map (PDF)</a> · <a href="files/pCS2+hSpCas9.gb">Sequence (GenBank)</a> · <a href="https://www.addgene.org/51815/">Addgene #51815</a></span>
+      <p>ヒトコドン最適化 SpCas9 を pCS2+ にクローニングした Cas9 mRNA 合成用ベクター（SP6）です。
+      メダカやゼブラフィッシュ、各種養殖魚等の真骨魚類を中心に、無顎類や両生類胚での実績もあり、水生動物の受精卵で高効率に働きます。<br>原著論文: <a href="https://doi.org/10.1242/bio.20148177"><em>Ansai &amp; Kinoshita, 2014</em></a></p></li>
+    <li><strong>pUC-BaitD-Xhbb-EGFP</strong> <span class="meta"><a href="https://github.com/satoshi-ansai/Plasmids/blob/main/NHEJ_KI/pUC-BaitD-Xhbb-EGFP.gb">Sequence (GenBank)</a> · <a href="https://github.com/satoshi-ansai/Plasmids">GitHub: Plasmids</a></span>
+      <p>NHEJ を利用した Cas9 ノックイン用のドナーベクターです。
+      ツメガエル beta-globin 遺伝子由来の最小プロモーターを使っており、バックグラウンドが低く抑えられます。<br>原著論文: <a href="https://doi.org/10.1002/dvg.23519"><em>Kayo et al., 2023</em></a></p></li>
+    <li><strong>Tip100 トランスポゾン用ベクター</strong> <span class="meta"><a href="https://www.nibb.ac.jp/hoshino/Tip100_vector_for_Medaka.html">配列・分譲（基礎生物学研究所 星野研究室）</a></span>
+      <p>アサガオ由来の DNA 型トランスポゾン Tip100 を利用した、メダカの高効率遺伝子導入用ベクターです。
+      両末端配列を 100 bp ずつに短縮しても高い転移活性が保たれ、生殖系列への導入率は 62.7% と、魚類では非常に高い値です。
+      転移酵素 mRNA 合成用の <strong>pCS2-Tip100</strong>、体細胞への導入効率の評価に適した <strong>pBS-Tip100-LR100-actb4k-EGFP</strong>（メダカ actb 4 kb プロモーター）、
+      生殖系列への導入の判定と系統樹立に適した <strong>pBS-Tip100-LR100-olvas-EGFP</strong>（olvas プロモーター）の 3 種類があり、
+      NBRP アサガオから分譲されています（MTA の締結と手数料が必要です）。<br>原著論文: <a href="https://doi.org/10.1007/s11248-025-00466-5"><em>Tanaka et al., 2025</em></a></p></li>
+  </ul>
+</section>
 
-    <!-- Bootstrap core CSS -->
-    <link href="./dist/css/bootstrap.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="./dist/css/rayout.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./dist/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="container">
-    	<div class="header clearfix">
-    		<nav>
-    		<h3 class="text-muted"  style="font-family: arial, sans-serif;">Satoshi Ansai</h3>
-    		<ul class="nav nav-tabs">
-    			<li role="presentation"><a href="index.html">Top</a></li>
-    			<li role="presentation"><a href="profile.html">Profile</a></li>
-    			<li role="presentation"><a href="research.html">Research</a></li>
-          <li role="presentation"><a href="publications.html">Publications</a></li>
-    			<li role="presentation" class="active"><a href="resources.html">Resources</a></li>
-    			<li role="presentation" class="dropdown pull-right">
-    			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Language <span class="caret"></span></a>
-    				<ul class="dropdown-menu">
-    					<li class="active"><a href="index.html">日本語</a></li>
-    					<li><a href="en/index.html">English</a></li>
-    				</ul>
-    			</li>
-    		</ul>
-    		</nav>
-    	</div>
-
-<h4>Resources</h4>
-
-<h5>プロトコール</h5>
-<ul>
-<li style="padding-bottom:5px"><strong><a href="files/CRISPRv3_jp.pdf" target=blank>CRISPR/Cas9 Protocol v3.0</a></strong> [日本語] (pdf, 247KB) <br>
-<small>完全にPlasmidフリーでsgRNAを合成できるプロトコルに変更しました。その他RNA合成に使用する試薬等も変更されています。</small>
-</li>
-<li style="padding-bottom:5px"><strong><a href="files/CRISPR_jp.pdf" target=blank>CRISPR/Cas9 Protocol v.1.4.1</a></strong> [日本語] (pdf, 166KB) | <a href="http://dx.doi.org/10.1242/bio.20148177" target=blank>Ansai and Kinoshita, 2014</a><br>
-<small>オリゴヌクレオチドのクローニングによってsgRNAを作製する旧プロトコル。<a href="http://www.shigen.nig.ac.jp/medaka/strain/laboManual.jsp" target=blank>NBRP medaka</a>でも公開されているものからは、少し改良しています。</small>
-</li>
-<li style="padding-bottom:5px"><strong><a href="files/CRISPR_en.pdf" target=blank>CRISPR/Cas9 Protocol</a></strong> [英語] (pdf, 1.5MB) | <a href="http://dx.doi.org/10.1242/bio.20148177" target=blank>Ansai and Kinoshita, 2014</a> (CRISPR); <a href="http://dx.doi.org/10.1111/dgd.12104" target=blank>Ansai et al. 2014</a> (HMA)<br>
-<small>英語版プロトコルです。変異検出法についても詳しく記載してあります。</small>
-</li>
-<li><strong><a href="files/TALEN_protocol.pdf" target=blank>TALEN Protocol v.1.0</a></strong> [日本語] (pdf, 1.8MB) | <a href="http://dx.doi.org/10.1534/genetics.112.147645" target=blank>Ansai et al, 2013</a><br>
-<small>2013年以降未更新なので、変異検出など情報が古い所があります。Repeat assembleの部分はそのまま使えるはずです。</small>
-</li>
-</ul>
-
-<h5>sgRNA設計用ファイル</h5>
-<p style="padding-left:1em">エクセルを使用したsgRNA用オリゴ設計支援シートです。v3.0等のPCRによるテンプレート合成用。</p>
-<ul>
-<li style="padding-bottom:5px"><strong><a href="files/sgRNA_PCRoligo.xlsx" target=blank>sgRNA_PCRoligo.xlsx</a></strong> (xlsx形式, 10KB) <small>for Microsoft Excel</small>
-</li>
-</ul>
-<p style="padding-left:1em">表計算ソフトのマクロを使用したpDR274用オリゴ設計支援ツールです。</p>
-<ul>
-<li style="padding-bottom:5px"><strong><a href="files/sgRNA_design.xls" target=blank>sgRNA_design.xls</a></strong> (xls形式, 35KB) <small>for Microsoft Excel (except 2008 for mac)</small>
-</li>
-<li><strong><a href="files/sgRNA_design.ods" target=blank>sgRNA_design.ods</a></strong> (ods形式, 22KB) <small>for Apache Open Office</small>
-</li>
-</ul>
-
-<h5>ベクター</h5>
-<ul>
-<li><strong>pCS2+hSpCas9</strong> | <a href="http://dx.doi.org/10.1242/bio.20148177" target=blank>Ansai and Kinoshita, 2014</a><br>
-<a href="files/pCS2+hSpCas9.pdf" target=blank>[Map]</a> (pdf, 20KB), <a href="files/pCS2+hSpCas9.gb" target=blank>[Sequence]</a> (genbank, 14KB)<br>
-<small>
-Cas9のRNA転写用ベクターとして使用できます (SP6 polymerase使用)。<br>
-hSpCas9 (human codon-optimized <i>Streptococcus pyogenes</i> Cas9, <a href="http://dx.doi.org/10.1126/science.1231143" target=blank>Cong et al, 2013</a>)をpCS2+にクローニングしました。<br>
-このベクターを用いて転写したRNAは、メダカやゼブラフィッシュを始め, 様々な硬骨魚類において高効率に働きます。<br>
-本ベクターは<a href="https://www.addgene.org/51815/" target=blank>Addgene (Plasmid #51815)</a>から入手可能です。
-</small>
-</li>
-</ul>
-
-<footer class="footer">
-  <p>&copy; 2016- <a href="index.html">Satoshi Ansai</a>, All rights reserved.
-      This site is made with <a href="http://getbootstrap.com/" target=blank><img src="./img/bootstrap-solid.gif" alt="Bootstrap" height="18px" style="vertical-align:bottom"></a> and
-      hosted on <a href="https://pages.github.com/" target=blank><img src="./img/GitHub-Mark-32px.png" alt="Github Pages" height="18px" style="vertical-align:bottom"></a>.</p>
+</main>
+<footer class="wrap site">
+  <p>© 2026– Satoshi Ansai</p>
 </footer>
-
-</div> <!-- /container -->
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./dist/js/bootstrap.min.js"></script>
-  </body>
+<script>
+document.querySelectorAll('.mail[data-m]').forEach(function (el) {
+  var a = document.createElement('a');
+  var m = atob(el.dataset.m).split('').reverse().join('');
+  a.href = 'mailto:' + m; a.textContent = m; el.replaceWith(a);
+});
+</script>
+</body>
 </html>

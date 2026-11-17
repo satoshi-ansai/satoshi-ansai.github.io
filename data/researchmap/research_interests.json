@@ -1,0 +1,199 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/research_interests?limit=1000&format=json&start=1",
+    "@type": "research_interests",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 10,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/8148855",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "8148855",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:11:26Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T05:11:27Z",
+            "keyword": {
+                "ja": "メダカ",
+                "en": "Medaka"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/46698919",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "46698919",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-06-04T09:08:12Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-06-04T09:08:12Z",
+            "keyword": {
+                "ja": "真骨魚類",
+                "en": "Teleost fishes"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/27183271",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "27183271",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:33:47Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:33:47Z",
+            "keyword": {
+                "ja": "性的二型",
+                "en": "Sexual dimorphism"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/27183229",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "27183229",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:33:26Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2023-03-27T13:30:25Z",
+            "keyword": {
+                "ja": "配偶者選好性",
+                "en": "Mate preference"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/41837294",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "41837294",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2023-03-27T13:30:45Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2023-03-27T13:30:45Z",
+            "keyword": {
+                "ja": "ゲノミクス",
+                "en": "Genomics"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/36863199",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "36863199",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2022-04-28T12:18:45Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2022-04-28T12:18:45Z",
+            "keyword": {
+                "ja": "種分化",
+                "en": "Speciation"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/8148858",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "8148858",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:11:27Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T05:11:27Z",
+            "keyword": {
+                "ja": "性染色体",
+                "en": "Sex chromosome"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/47179927",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "47179927",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-07-22T13:21:56Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-07-22T13:21:56Z",
+            "keyword": {
+                "ja": "染色体進化",
+                "en": "Chromosome evolution"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/8148859",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "8148859",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:11:27Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T05:11:27Z",
+            "keyword": {
+                "ja": "ゲノム編集",
+                "en": "Genome editing"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_interests/46698915",
+            "@type": "research_interests",
+            "@reverse": "https://api.researchmap.jp/sansai/research_interests",
+            "rm:id": "46698915",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-06-04T09:07:04Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-06-04T09:07:04Z",
+            "keyword": {
+                "ja": "水産育種",
+                "en": "Aquaculture breeding"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1546 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/research_projects?limit=1000&format=json&start=1",
+    "@type": "research_projects",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 24,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/55135808",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "55135808",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2026-10-02T11:57:18Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2026-10-02T11:57:18Z",
+            "research_project_title": {
+                "ja": "婚姻色の進化を促す性淘汰圧の転換をもたらす遺伝機構"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業"
+            },
+            "category": {
+                "ja": "基盤研究(B)"
+            },
+            "institution_name": {
+                "ja": "岡山大学"
+            },
+            "from_date": "2026-04-01",
+            "to_date": "2029-03-31",
+            "overall_grant_amount": {
+                "total_cost": "24700000",
+                "direct_cost": "19000000",
+                "indirect_cost": "5700000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "26K02065"
+                ],
+                "national_grant_number": [
+                    "JP26K02065"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-26K02065"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/54472708",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "54472708",
+            "rm:user_id": "B000253921",
+            "identifiers_id_modified": "2026-09-15 00:27:35",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2026-07-25T06:03:14Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2026-07-25T06:03:14Z",
+            "research_project_title": {
+                "ja": "利きを司る制御機構の理解",
+                "en": "Understading the mechanisms governing animal laterality"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹内 勇一"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "福富 又三郎"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "基盤研究(B)",
+                "en": "Grant-in-Aid for Scientific Research (B)"
+            },
+            "institution_name": {
+                "ja": "北海道大学",
+                "en": "Hokkaido University"
+            },
+            "from_date": "2026-04-01",
+            "to_date": "2029-03-31",
+            "overall_grant_amount": {
+                "total_cost": "18200000",
+                "direct_cost": "14000000",
+                "indirect_cost": "4200000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "26K02110"
+                ],
+                "national_grant_number": [
+                    "JP26K02110"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-26K02110"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/54717745",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "54717745",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2026-08-24T06:03:12Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2026-08-24T06:03:12Z",
+            "research_project_title": {
+                "ja": "昆虫・魚類の色彩平行進化における進化可能性変動史"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安藤 俊哉"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "野村 翔太"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業"
+            },
+            "category": {
+                "ja": "学術変革領域研究(B)"
+            },
+            "institution_name": {
+                "ja": "東北大学"
+            },
+            "from_date": "2026-04-01",
+            "to_date": "2028-03-31",
+            "overall_grant_amount": {
+                "total_cost": "25480000",
+                "direct_cost": "19600000",
+                "indirect_cost": "5880000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "25K24881"
+                ],
+                "national_grant_number": [
+                    "JP25K24881"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PLANNED-25K24881"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/55117831",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "55117831",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2026-10-02T09:27:11Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2026-10-02T09:27:11Z",
+            "research_project_title": {
+                "ja": "昆虫・魚類の色彩平行進化における進化可能性変動史",
+                "en": "Detecting the evolvability dynamics in the parallel evolution of body color in insects and fishes"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安藤 俊哉"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "学術変革領域研究(B)",
+                "en": "Grant-in-Aid for Transformative Research Areas (B)"
+            },
+            "institution_name": {
+                "ja": "京都大学",
+                "en": "Kyoto University"
+            },
+            "from_date": "2025-04-01",
+            "to_date": "2028-03-31",
+            "overall_grant_amount": {
+                "total_cost": "40950000",
+                "direct_cost": "31500000",
+                "indirect_cost": "9450000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "25H01424"
+                ],
+                "national_grant_number": [
+                    "JP25H01424"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PLANNED-25H01424"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/50850461",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "50850461",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2025-08-14T06:08:13Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2025-08-14T06:08:13Z",
+            "research_project_title": {
+                "ja": "異種由来ミトコンドリアによる新規種分化様式の検証",
+                "en": "Verification of a novel mode of speciation by mitochondria originated from a different species"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "山平 寿智"
+                    },
+                    {
+                        "name": "楠見 健介"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "北野 潤"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "基盤研究(A)",
+                "en": "Grant-in-Aid for Scientific Research (A)"
+            },
+            "institution_name": {
+                "ja": "琉球大学",
+                "en": "University of the Ryukyus"
+            },
+            "from_date": "2025-04-01",
+            "to_date": "2028-03-31",
+            "overall_grant_amount": {
+                "total_cost": "46150000",
+                "direct_cost": "35500000",
+                "indirect_cost": "10650000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "25H01005"
+                ],
+                "national_grant_number": [
+                    "JP25H01005"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-25H01005"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48062585",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48062585",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-10-01T07:12:50Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-10-01T07:12:50Z",
+            "research_project_title": {
+                "ja": "種間比較から紐解く形態的な二次性徴形質の多様化機構の解明"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "荻野 由紀子"
+                    },
+                    {
+                        "name": "福田 尚代"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "渡辺 英治"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業"
+            },
+            "category": {
+                "ja": "基盤研究(B)"
+            },
+            "institution_name": {
+                "ja": "九州大学"
+            },
+            "from_date": "2024-04-01",
+            "to_date": "2027-03-31",
+            "overall_grant_amount": {
+                "total_cost": "18460000",
+                "direct_cost": "14200000",
+                "indirect_cost": "4260000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "24K02063"
+                ],
+                "national_grant_number": [
+                    "JP24K02063"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K02063"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48062584",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48062584",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-10-01T07:12:50Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-10-01T07:12:50Z",
+            "research_project_title": {
+                "ja": "色素細胞の創出と喪失の進化発生メカニズム"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "橋本 寿史"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "合田 真"
+                    },
+                    {
+                        "name": "日比 正彦"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業"
+            },
+            "category": {
+                "ja": "基盤研究(C)"
+            },
+            "institution_name": {
+                "ja": "リージョナルフィッシュ株式会社(研究開発部)"
+            },
+            "from_date": "2024-04-01",
+            "to_date": "2027-03-31",
+            "overall_grant_amount": {
+                "total_cost": "4550000",
+                "direct_cost": "3500000",
+                "indirect_cost": "1050000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "24K09468"
+                ],
+                "national_grant_number": [
+                    "JP24K09468"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K09468"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/51331417",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "51331417",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2025-09-29T11:07:24Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2025-09-29T11:07:24Z",
+            "research_project_title": {
+                "ja": "性決定システムの転換をもたらした進化メカニズムの解明",
+                "en": "Evolutionary mechanisms leading to a transition of the sex determination systems."
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹花 佑介"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "基盤研究(B)",
+                "en": "Grant-in-Aid for Scientific Research (B)"
+            },
+            "institution_name": {
+                "ja": "長浜バイオ大学",
+                "en": "Nagahama Institute of Bio-Science and Technology"
+            },
+            "from_date": "2023-04-01",
+            "to_date": "2027-03-31",
+            "overall_grant_amount": {
+                "total_cost": "18720000",
+                "direct_cost": "14400000",
+                "indirect_cost": "4320000"
+            },
+            "description": {
+                "ja": "本研究では、同種でありながらXY型とZW型が共存するジャワメダカと、その姉妹種でZW型のハブスメダカについて、性決定遺伝子の起源と機能を解明することを目的としている。本年度は各種における性決定遺伝子の同定を目指し、ゲノム解析とノックアウト解析を実施した。ジャワメダカのスラウェシ系統（インドネシア）はXY型であり、Y染色体で多重重複（約45コピー）したDmrt1Yであることが判明している。そこでDmrt1Yのノックアウト系統を複数作出し、それぞれのコピー数や挿入欠失変異を調べたところ、正常なコピーが半数程度残っていても性転換が生じることが明らかになった。この結果は性決定機能を有するコピーがごく半数以下であることを示唆している。また、ZW型を示すペナン系統（マレーシア）については、これまでに特定したW染色体特異的な３つの重複遺伝子を同定し、CRISPR/Cas9法によってノックアウト実験を実施した。これまでに、３つの候補遺伝子のひとつでZWオスを示す性転換系統が得られ、現在のところ本遺伝子を性決定遺伝子の最有力候補と考えている。同じくZW型のハブスメダカについても、ゲノム解析によって高精度のZ染色体配列とW染色体配列の構築に成功し、W特異的な３つの候補遺伝子を得た。しかし、いずれも候補遺伝子もノックアウト個体が性転換せず、いずれも性決定に関与しないことが示唆された。今後はトランクリプトーム解析や強制発現解析を併用して性決定遺伝子を探索し、性決定遺伝子候補の特定を目指したいと考えている。"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "23K27215"
+                ],
+                "national_grant_number": [
+                    "JP23K27215"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K27215"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/45912133",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "45912133",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "ai:assign_based_internal_feeds",
+            "rm:creator_type": "ai",
+            "rm:created": "2024-03-26T06:00:39Z",
+            "rm:modifier_id": "ai:assign_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-03-26T06:00:39Z",
+            "research_project_title": {
+                "ja": "性決定システムの転換をもたらした進化メカニズムの解明",
+                "en": "Evolutionary mechanisms leading to a transition of the sex determination systems."
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹花 佑介"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "基盤研究(B)",
+                "en": "Grant-in-Aid for Scientific Research (B)"
+            },
+            "institution_name": {
+                "ja": "長浜バイオ大学",
+                "en": "Nagahama Institute of Bio-Science and Technology"
+            },
+            "from_date": "2023-04-01",
+            "to_date": "2027-03-31",
+            "overall_grant_amount": {
+                "total_cost": "18720000",
+                "direct_cost": "14400000",
+                "indirect_cost": "4320000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "23H02524"
+                ],
+                "national_grant_number": [
+                    "JP23H02524"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23H02524"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48062583",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48062583",
+            "rm:user_id": "B000253921",
+            "identifiers_id_modified": "2026-05-12 04:20:37",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-10-01T07:12:49Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-10-01T07:12:49Z",
+            "research_project_title": {
+                "ja": "視覚シグナルを介した種内コミュニケーションの脳の分子神経基盤の解明"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹内 秀明"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業"
+            },
+            "category": {
+                "ja": "挑戦的研究(萌芽)"
+            },
+            "institution_name": {
+                "ja": "東北大学"
+            },
+            "from_date": "2024-06-28",
+            "to_date": "2026-03-31",
+            "overall_grant_amount": {
+                "total_cost": "6500000",
+                "direct_cost": "5000000",
+                "indirect_cost": "1500000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "24K21957"
+                ],
+                "national_grant_number": [
+                    "JP24K21957"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-24K21957"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48062586",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48062586",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-10-01T07:12:50Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-10-01T07:12:50Z",
+            "research_project_title": {
+                "ja": "装飾形質をシグナルとした配偶者選好性を司る神経基盤の解明",
+                "en": "A neural mechanism underlying female mate preference using a ornamental signal"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "竹内 秀明"
+                    },
+                    {
+                        "name": "梶山 十和子"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業",
+                "en": "Grants-in-Aid for Scientific Research"
+            },
+            "category": {
+                "ja": "基盤研究(B)",
+                "en": "Grant-in-Aid for Scientific Research (B)"
+            },
+            "from_date": "2023-04-01",
+            "to_date": "2026-03-31",
+            "overall_grant_amount": {
+                "total_cost": "18850000",
+                "direct_cost": "14500000",
+                "indirect_cost": "4350000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "23K27205"
+                ],
+                "national_grant_number": [
+                    "JP23K27205"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-23K27205"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424969",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424969",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:19:20Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2021-05-06T07:19:20Z",
+            "research_project_title": {
+                "ja": "種分化を規定するゲノム構造",
+                "en": "Genomic basis of speciation"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "北野 潤"
+                    },
+                    {
+                        "name": "山平 寿智"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Jun Kitano"
+                    },
+                    {
+                        "name": "Kazunori Yamahira"
+                    },
+                    {
+                        "name": "Satoshi Ansai"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "科学技術振興機構",
+                "en": "JST"
+            },
+            "system_name": {
+                "ja": "戦略的創造研究推進事業 CREST",
+                "en": "CREST"
+            },
+            "category": {
+                "ja": "ゲノムスケールのDNA設計・合成による細胞制御技術の創出",
+                "en": "Large-scale genome synthesis and cell programming"
+            },
+            "from_date": "2020-11",
+            "to_date": "2026-03",
+            "research_project_owner_role": "coinvestigator"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/33780743",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "33780743",
+            "rm:user_id": "B000253921",
+            "identifiers_id_modified": "2026-05-12 04:20:37",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-09-22T12:15:25Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T09:21:43Z",
+            "research_project_title": {
+                "ja": "魚類ソーシャルビジョンの分子・遺伝基盤の解明",
+                "en": "Molecular/genetic basis underlying the fish social vision"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹内 秀明"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 基盤研究(A)",
+                "en": "Grants-in-Aid for Scientific Research Grant-in-Aid for Scientific Research (A)"
+            },
+            "category": {
+                "ja": "基盤研究(A)",
+                "en": "Grant-in-Aid for Scientific Research (A)"
+            },
+            "institution_name": {
+                "ja": "東北大学",
+                "en": "Tohoku University"
+            },
+            "from_date": "2021-04-05",
+            "to_date": "2025-03-31",
+            "overall_grant_amount": {
+                "total_cost": "42900000",
+                "direct_cost": "33000000",
+                "indirect_cost": "9900000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "21H04773"
+                ],
+                "national_grant_number": [
+                    "JP21H04773"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21H04773"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48700478",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48700478",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-13T03:43:45Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-13T03:43:45Z",
+            "research_project_title": {
+                "ja": "ゲノム情報を活用した次世代水産物育種技術の確立"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "岡山県"
+            },
+            "system_name": {
+                "ja": "特別電源所在県科学技術振興事業における大学等委託研究"
+            },
+            "category": {
+                "ja": "グリーン成長分野に関する基盤技術開発"
+            },
+            "institution_name": {
+                "ja": "岡山大学"
+            },
+            "from_date": "2024-06",
+            "to_date": "2025-02",
+            "research_project_owner_role": "principal_investigator"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/33780742",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "33780742",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-09-22T12:15:25Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T09:21:44Z",
+            "research_project_title": {
+                "ja": "熱帯の多様性創出における急速な性染色体置換の役割"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "山平 寿智"
+                    },
+                    {
+                        "name": "北野 潤"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 基盤研究(A)"
+            },
+            "category": {
+                "ja": "基盤研究(A)"
+            },
+            "institution_name": {
+                "ja": "琉球大学"
+            },
+            "from_date": "2021-04-05",
+            "to_date": "2024-03-31",
+            "overall_grant_amount": {
+                "total_cost": "42120000",
+                "direct_cost": "32400000",
+                "indirect_cost": "9720000"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "21H04782"
+                ],
+                "national_grant_number": [
+                    "JP21H04782"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21H04782"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48700466",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48700466",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-13T03:41:39Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-13T03:41:39Z",
+            "research_project_title": {
+                "ja": "メダカ野生由来系統のゲノム多型情報整備"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "成瀬 清"
+                    },
+                    {
+                        "name": "松田 勝"
+                    },
+                    {
+                        "name": "工樂 樹洋"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "文部科学省"
+            },
+            "system_name": {
+                "ja": "ナショナルバイオリソースプロジェクト（中核的拠点整備プログラム）"
+            },
+            "category": {
+                "ja": "ゲノム情報等整備"
+            },
+            "from_date": "2022-07",
+            "to_date": "2024-03",
+            "research_project_owner_role": "coinvestigator"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/48700503",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "48700503",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-12-13T03:47:41Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-12-13T03:47:41Z",
+            "research_project_title": {
+                "ja": "品種特異的なゲノム解析によるゲノム編集水産品種の育種効果の向上"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "NEDO"
+            },
+            "system_name": {
+                "ja": "官民による若手研究者発掘支援事"
+            },
+            "category": {
+                "ja": "スタートアップ課題解決支援型"
+            },
+            "institution_name": {
+                "ja": "京都大学"
+            },
+            "from_date": "2023-07",
+            "to_date": "2024-02",
+            "research_project_owner_role": "principal_investigator"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424829",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424829",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T09:59:41Z",
+            "research_project_title": {
+                "ja": "メダカ黒色婚姻色の多様化をもたらす性的葛藤遺伝子の同定"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 若手研究"
+            },
+            "category": {
+                "ja": "若手研究"
+            },
+            "institution_name": {
+                "ja": "東北大学"
+            },
+            "from_date": "2021-04-01",
+            "to_date": "2023-03-31",
+            "overall_grant_amount": {
+                "total_cost": "4550000",
+                "direct_cost": "3500000",
+                "indirect_cost": "1050000"
+            },
+            "description": {
+                "ja": "雌雄間で有利な表現型が異なる状態、すなわち性的葛藤状態は、性的二型を進化させる主要な原動力であると考えられている。しかし、性的葛藤形質の原因遺伝子を同定し、その機能解析からそれらの遺伝子が性的葛藤状態にあることを実証し、さらにその解消に関わる詳細な遺伝機構を明らかにした例はない。本研究では、黒色婚姻色パターンと性染色体の急速な種間変異を有するインドネシア・スラウェシのポソ湖メダカ科固有種群をモデルとして、特に黒色婚姻色の原因遺伝子同定から性的葛藤遺伝子の同定を目指す。更に、同定した原因遺伝子についてゲノム編集による機能解析を行うことで、同定した遺伝子が性的葛藤状態にあることを実証することを目的とする。\n本年度は、遺伝学的解析による黒色婚姻色パターンの変異に関わる遺伝子座の同定と、各固有種群における性決定遺伝子の絞り込みを中心に行った。遺伝学的解析では、解析に必要な種間雑種（F2またはBC1）家系の作出およびサンプリングが完了した。現在、各家系についてSNPタイピングを進行中であり、その後のQTL解析についても表現型解析を準備中である。性決定遺伝子座の同定に向けては、ddRAD-seqにより取得したゲノムワイドSNPを用いた解析や、Pool-seqによる雌雄間の全ゲノム比較解析を行ったものの、いずれの解析でも性染色体のシグナルが弱く、性決定遺伝子座の絞り込みにつながるような再現性のある結果が得られていない。現在、より精度の高い手法として、野外採集個体の全ゲノムシーケンスデータを使用したゲノムワイド関連解析により、性決定遺伝子座の解析を行うことを計画中である。"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "21K15143"
+                ],
+                "national_grant_number": [
+                    "JP21K15143"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-21K15143"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424830",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424830",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T05:32:06Z",
+            "research_project_title": {
+                "ja": "XY型からZW型への性決定システムの進化"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "竹花 佑介"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 基盤研究(B)"
+            },
+            "category": {
+                "ja": "基盤研究(B)"
+            },
+            "institution_name": {
+                "ja": "長浜バイオ大学"
+            },
+            "from_date": "2019-04-01",
+            "to_date": "2023-03-31",
+            "overall_grant_amount": {
+                "total_cost": "17160000",
+                "direct_cost": "13200000",
+                "indirect_cost": "3960000"
+            },
+            "description": {
+                "ja": "本研究では、互いに近縁でありながら異なる性決定システム（XY型およびZW型）を示すメダカ属javanicusグループの４種について、全種から性決定遺伝子を同定することで、XY型からZW型が生じた進化メカニズムを解明することを目的としている。本年度は、ゲノムシークエンスを用いた性決定遺伝子候補の探索を中心に、以下の実験を行った。\nZW型のジャワメダカとハブスメダカについては、Z染色体あるいはW染色体のみをもつ半数体胚を作出し、それぞれからIlluminaデータを取得した。これをすでに構築したジャワメダカの参照配列にマッピングすることで、Z染色体とW性染色体の間でカバレージが異なる領域や遺伝的分化が認められる領域を特定した。ジャワメダカについては、W染色体特異的なPacBioコンティグが見出され、この中に性決定遺伝子が含まれている可能性が考えられる。また、ジャワメダカの実験系統の原産地にあたるペナン（マレーシア）にて野生集団を採集し、実験系統で確立した性連鎖マーカーを用いて遺伝的性（ZZあるいはZW）を確認した。ZZはすべてオス、ZWはすべてメスであったことから、野生集団が実験系統と同一の性決定機構をもつことが確認できた。一方、XY型のタイメダカについては、集団ゲノミクス解析によって、その性染色体と性決定遺伝子座を特定した。XY型のハウザンメダカについては、Y染色体特異的にDmrt1が10コピー以上遺伝子重複していることを見出した。これらY染色体のDmrt1をノックアウトするとXY個体がメスに性転換したことから、本遺伝子が性決定遺伝子であるこが強く示唆された。"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "19H03269"
+                ],
+                "national_grant_number": [
+                    "JP19H03269"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-19H03269"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424831",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424831",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T04:33:17Z",
+            "research_project_title": {
+                "ja": "失われた野性味から明らかにする自然環境特異的な生体調節のメカニズム",
+                "en": "Elucidation of flexible homeostasis regulation that are lost during domestication"
+            },
+            "investigators": {
+                "en": [
+                    {
+                        "name": "Kanda Shinji"
+                    }
+                ],
+                "ja": [
+                    {
+                        "name": "神田 真司"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "馬谷 千恵"
+                    },
+                    {
+                        "name": "兵藤 晋"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 挑戦的研究(萌芽)",
+                "en": "Grants-in-Aid for Scientific Research Grant-in-Aid for Challenging Research (Exploratory)"
+            },
+            "category": {
+                "ja": "挑戦的研究(萌芽)",
+                "en": "Grant-in-Aid for Challenging Research (Exploratory)"
+            },
+            "institution_name": {
+                "ja": "東京大学",
+                "en": "The University of Tokyo"
+            },
+            "from_date": "2018-06-29",
+            "to_date": "2021-03-31",
+            "overall_grant_amount": {
+                "total_cost": "6370000",
+                "direct_cost": "4900000",
+                "indirect_cost": "1470000"
+            },
+            "description": {
+                "ja": "本年度はd-rR メダカと野生メダカのF1ハイブリッドそして F2ハイブリッドを作成した。 まず、F0個体の各種表現型を解析したところ、当初の期待通り、d-rR メダカと野生メダカは様々な表現型の違いを表していた。これらの見た目で観察された表現型を、それぞれ定量し、解析したところ、成長や繁殖・ストレスなど、様々な表現型において有意に差があることが分かった。そこでF2ハイブリッドを用いて同様の表現型解析を行ったところ、ちょうどd-rR メダカと野生メダカの間を取るような表現型の分布を示したため、本研究で期待しているような遺伝子による表現型の差が出ているという事が強く示唆された。本年度は、この表現型をさらに遺伝子型の解析として行うために、各種実験系の整備及びゲノム解析に向けたゲノム抽出の条件検討、最適なシーケンス法の検討を行った。現在、両系統のF0世代および200匹以上のF2ハイブリッドの表現型解析を終えており、これから最適な条件でのゲノム抽出・サンプル調製を行い、次世代シーケンサーによるすべての個体のゲノム解析を行う段階にさしかかっている。また、F2個体をさらに増やし、表現型解析も続けている。これらの解析および次世代シーケンサーによるシーケンスの後には、今回明らかにした表現型に関与する遺伝子座の決定がなされると期待される。これまでに研究分担者のそれぞれの技術をいかし、密に連携した研究ができ、概ね順調に進展していると考えている。",
+                "en": "Generally, wild and domesticated strains have different behavioral and physiological properties in animals. Here, by using wild and pet strains of medaka, we performed QTL analysis to identify the genomic loci that are responsible to the differences of phenotypes in wild and laboratory strains. From the two rounds of QTL analysis using 209 and 77 F2 hybrids, we identified multiple loci that showed correlation to phenotypes of stress response and reproduction."
+            },
+            "identifiers": {
+                "grant_number": [
+                    "18K19323"
+                ],
+                "national_grant_number": [
+                    "JP18K19323"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18K19323"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424832",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424832",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T04:21:46Z",
+            "research_project_title": {
+                "ja": "メダカ科魚類における性的二型多様化の進化遺伝機構",
+                "en": "The evolutionary genetic basis of diversified sexual dimorphism in Adrianichthyidae fishes"
+            },
+            "investigators": {
+                "en": [
+                    {
+                        "name": "ANSAI SATOSHI"
+                    }
+                ],
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 若手研究",
+                "en": "Grants-in-Aid for Scientific Research Grant-in-Aid for Early-Career Scientists"
+            },
+            "category": {
+                "ja": "若手研究",
+                "en": "Grant-in-Aid for Early-Career Scientists"
+            },
+            "from_date": "2018-04-01",
+            "to_date": "2020-03-31",
+            "overall_grant_amount": {
+                "total_cost": "4160000",
+                "direct_cost": "3200000",
+                "indirect_cost": "960000"
+            },
+            "description": {
+                "ja": "性的二型の多様化に関わる進化・遺伝メカニズムを解明するため、インドネシア・スラウェシ島のメダカ科固有種のウォウォールメダカが示す雄の婚姻色（胸鰭の赤色）をモデルに研究を行った。QTL解析とRNA-seq解析から同定した常染色体上の候補遺伝子について、CRISPR/Casシステムを用いて変異体を作出し、赤色の発現に必須であることを示した。またアンドロゲン投与実験から、アンドロゲンシグナルが発現の性差の形成に重要であることを示した。さらに、変異体を用いた配偶行動実験と捕食実験から、赤色の欠失が配偶者選好性を低下させ、捕食者を誘引することが明らかとなった。",
+                "en": "To elucidate the evolutionary and genetic mechanisms underlying diversification in sexual dimorphism, we studied on the male nuptial coloration (red pectoral fins) of a medaka fish, Oryzias woworae, endemic to Sulawesi, Indonesia. A candidate gene on an autosome, identified by QTL analysis and RNA-seq, was disrupted by CRISPR/Cas system, and the mutant exhibited loss of red pigment cells. Then, androgen administration showed that the differential expression of the gene between two sexes is caused by androgen signaling. Furthermore, a mating experiment and a predator experiment using the knockout fish indicated that loss of the red coloration decreased the female mate preference but increased the preference by the predator."
+            },
+            "identifiers": {
+                "grant_number": [
+                    "18K14769"
+                ],
+                "national_grant_number": [
+                    "JP18K14769"
+                ]
+            },
+            "see_also": [
+                {
+                    "@id": "https://kaken.nii.ac.jp/file/KAKENHI-PROJECT-18K14769/18K14769seika.pdf",
+                    "label": "url"
+                },
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-18K14769"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424833",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424833",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T00:22:18Z",
+            "research_project_title": {
+                "ja": "メダカ科魚類における性的葛藤遺伝子の同定と機能解析"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 特別研究員奨励費"
+            },
+            "category": {
+                "ja": "特別研究員奨励費"
+            },
+            "institution_name": {
+                "ja": "国立遺伝学研究所"
+            },
+            "from_date": "2016-04-22",
+            "to_date": "2019-03-31",
+            "overall_grant_amount": {
+                "total_cost": "4420000",
+                "direct_cost": "3400000",
+                "indirect_cost": "1020000"
+            },
+            "description": {
+                "ja": "本研究は、性的二型の多様化に関わる分子機構を解明し、雌雄の適応度に与える影響を含めて実験的に証明することを目的として、インドネシア・スラウェシ島のメダカ科魚類固有種における体色の性的二型をモデルとした研究を進めている。前年度までに、ウォウォールメダカ (Oryzias woworae) の雄が発現する鮮やかな体色（赤い胸鰭と青い体側）について、種間交雑家系を用いたQTL解析を行い、原因遺伝子座の同定を試みた。その結果、赤い胸鰭の有無が常染色体上の1遺伝子座によって制御されている可能性を見出した。本年度はまず、（１）胸鰭におけるRNA-seqによる網羅的遺伝子発現解析により、胸鰭で発現に雌雄差のある遺伝子を計735個同定した。この内、18個がQTL解析により同定した原因遺伝子座内に含まれており、その中から有力な候補遺伝子を同定した。続いて同定した候補遺伝子について、（２）F2雑種個体を用いたアリル特異的発現解析を行った所、雌雄どちらにおいてもウォウォールメダカ由来アリルの発現量が有意に高い事が明らかとなった。このことは、原因遺伝子のシス調節領域の変異が胸鰭の高発現に重要であることを示唆している。さらに（３）雌の配偶者選択行動に対する胸鰭色彩の影響を解析するため、予備的な行動実験を行った。赤色フィルター下の行動実験で、赤い胸鰭を持つ種への選好性が低下する傾向が見られたことから、胸鰭の色彩が配偶者選好に重要である可能性が示された。"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "16J05534"
+                ],
+                "national_grant_number": [
+                    "JP16J05534"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16J05534"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424834",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424834",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-02-01T00:15:40Z",
+            "research_project_title": {
+                "ja": "脊椎動物の社会性行動の遺伝・神経基盤の解明",
+                "en": "Genetic and neural basis of social behaviors in vertebrates"
+            },
+            "investigators": {
+                "en": [
+                    {
+                        "name": "Naruse Kiyoshi"
+                    },
+                    {
+                        "name": "Takeuchi Hideaki"
+                    },
+                    {
+                        "name": "Yokoi Saori"
+                    },
+                    {
+                        "name": "Fukamachi Shoji"
+                    }
+                ],
+                "ja": [
+                    {
+                        "name": "成瀬 清"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "竹内 秀明"
+                    },
+                    {
+                        "name": "横井 佐織"
+                    },
+                    {
+                        "name": "深町 昌司"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会",
+                "en": "Japan Society for the Promotion of Science"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 基盤研究(B)",
+                "en": "Grants-in-Aid for Scientific Research Grant-in-Aid for Scientific Research (B)"
+            },
+            "category": {
+                "ja": "基盤研究(B)",
+                "en": "Grant-in-Aid for Scientific Research (B)"
+            },
+            "institution_name": {
+                "ja": "基礎生物学研究所",
+                "en": "National Institute for Basic Biology"
+            },
+            "from_date": "2016-04-01",
+            "to_date": "2019-03-31",
+            "overall_grant_amount": {
+                "total_cost": "16770000",
+                "direct_cost": "12900000",
+                "indirect_cost": "3870000"
+            },
+            "description": {
+                "ja": "c-fos/egr1のプロモーターの下流にDD_mClover3をノックインした系統を樹立し、てんかん誘導剤であるPTZを用いて、神経興奮依存にDD_mClover3の発現量が上昇するかを確認した。その結果Tg（c-fos:DD_mClover3）ではDD_mClover3の発現量が約1.5-6倍に上昇した。またTg（egr1:DD_mClover3)系統では同じ処理により発現量が1.9倍に上昇した。\nCRISPR-Cas9を用いたゲノム編集によってSWS1、SWS2、 LWSの各遺伝子に関するKO個体を樹立することができた。またSWS1特異的モノクローナル抗体を得ることができた。",
+                "en": "We have established the KI(c-fos/egr1: DD_mClover3) lines and analyzed the up regulation of DD_mClover3 by TMP(epilepsy inducer). We have detected DD_mClover3 expression 1.5-6 times higher than untreated medaka in KI(c-fos: DD_mClover3) line and 1.9 times higher than untreated medaka in KI(egr1: DD_mClover3) line. These two lines may be useful for visualization of neural networks based on the specific behavior using DD_mClover3 expression.\nWe successfully established KO individuals of the SWS1, SWS2 and LWS genes by CRISPR-Cas9. In addition, we could obtaine SWS1 specific monoclonal antibody."
+            },
+            "identifiers": {
+                "grant_number": [
+                    "16H04819"
+                ],
+                "national_grant_number": [
+                    "JP16H04819"
+                ]
+            },
+            "see_also": [
+                {
+                    "@id": "https://kaken.nii.ac.jp/file/KAKENHI-PROJECT-16H04819/16H04819seika.pdf",
+                    "label": "url"
+                },
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-16H04819"
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_projects/32424835",
+            "@type": "research_projects",
+            "@reverse": "https://api.researchmap.jp/sansai/research_projects",
+            "rm:id": "32424835",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2021-05-06T07:13:07Z",
+            "rm:modifier_id": "ai:identify_based_internal_feeds",
+            "rm:modifier_type": "ai",
+            "rm:modified": "2024-01-31T20:22:37Z",
+            "research_project_title": {
+                "ja": "人工ヌクレアーゼを用いた標的遺伝子組換えメダカ作出技術の確立"
+            },
+            "investigators": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "offer_organization": {
+                "ja": "日本学術振興会"
+            },
+            "system_name": {
+                "ja": "科学研究費助成事業 特別研究員奨励費"
+            },
+            "category": {
+                "ja": "特別研究員奨励費"
+            },
+            "institution_name": {
+                "ja": "京都大学"
+            },
+            "from_date": "2013-04-01",
+            "to_date": "2016-03-31",
+            "overall_grant_amount": {
+                "total_cost": "3000000",
+                "direct_cost": "3000000"
+            },
+            "description": {
+                "ja": "DNAシークエンス技術の発達に伴い、ゲノム情報の整備が急速に進む中、個々の遺伝子の機能を個体レベルで詳細に解析するための逆遺伝学的手法の重要性は増大しつつある。本研究では、任意のゲノムDNAを切断可能な人工ヌクレアーゼを用いて、メダカでの胚における標的遺伝子組換え技術を確立することを目的とした。本年度は前年度に引き続き、CRISPR/Casシステムによる標的遺伝子組み換えの高効率化のための条件検討を行った。\n本研究では、骨格筋特異的に強く発現するOlMA1遺伝子への標的遺伝子組換えによるGFP遺伝子の導入をモデル実験として、導入効率の比較検討を進めた。始めに、特に再現性において問題となった部分として、ドナーDNAへのRNaseの混入、及び転写RNAへのDNaseの混入の2点について、それぞれProteinase処理の追加や精製キットの変更を行った。続いて、必要な各核酸の導入量や導入に用いるドナーベクター中の相同配列の長さ、相同配列を露出させるためのBait配列について、導入効率に及ぼす影響を比較検討し、ある程度効率的に標的遺伝子組換えを行うためのプロトコルを確立しつつある。現在、当初計画の通り、更なる相同組換え効率の上昇を期待して、DNA二重鎖切断修復に関わる分子の操作についても検討を進めている。"
+            },
+            "identifiers": {
+                "grant_number": [
+                    "13J01682"
+                ],
+                "national_grant_number": [
+                    "JP13J01682"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "kaken",
+                    "@id": "https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-13J01682"
+                }
+            ]
+        }
+    ]
+}

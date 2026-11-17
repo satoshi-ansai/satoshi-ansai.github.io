@@ -1,0 +1,242 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/books_etc?limit=1000&format=json&start=1",
+    "@type": "books_etc",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 4,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/books_etc/27184598",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/sansai/books_etc",
+            "rm:id": "27184598",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:44:00Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:44:00Z",
+            "book_title": {
+                "ja": "Medaka : Biology, Management, and Experimental Protocols, Volume 2",
+                "en": "Medaka : Biology, Management, and Experimental Protocols, Volume 2"
+            },
+            "book_owner_role": "contributor",
+            "authors": {
+                "ja": [
+                    {
+                        "name": "Masato Kinoshita"
+                    },
+                    {
+                        "name": "Satoshi Ansai"
+                    },
+                    {
+                        "name": "Yu Murakami"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Masato Kinoshita"
+                    },
+                    {
+                        "name": "Satoshi Ansai"
+                    },
+                    {
+                        "name": "Yu Murakami"
+                    }
+                ]
+            },
+            "book_owner_range": {
+                "ja": "Chapter 7 Genome Editing",
+                "en": "Chapter 7 Genome Editing"
+            },
+            "publisher": {
+                "ja": "Wiley-Blackwell",
+                "en": "Wiley-Blackwell"
+            },
+            "publication_date": "2020",
+            "total_page": "2 v.",
+            "languages": [
+                "eng"
+            ],
+            "identifiers": {
+                "cinii_nc_id": [
+                    "BA90454417"
+                ],
+                "isbn": [
+                    "9780813808710"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "cinii_books",
+                    "@id": "http://ci.nii.ac.jp/ncid/BA90454417",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/books_etc/27183305",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/sansai/books_etc",
+            "rm:id": "27183305",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2020-05-08T05:35:10Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2020-05-08T05:36:48Z",
+            "book_title": {
+                "ja": "遺伝子から解き明かす魚の不思議な世界 : 水面下で起きた4億年の進化物語"
+            },
+            "book_owner_role": "contributor",
+            "authors": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ]
+            },
+            "book_owner_range": {
+                "ja": "第5章 ゲノム編集による魚類研究の新展開"
+            },
+            "publisher": {
+                "ja": "一色出版"
+            },
+            "publication_date": "2019",
+            "total_page": "iv, 469p",
+            "languages": [
+                "jpn"
+            ],
+            "identifiers": {
+                "cinii_nc_id": [
+                    "BB28741244"
+                ],
+                "isbn": [
+                    "9784909383075"
+                ]
+            },
+            "see_also": [
+                {
+                    "label": "cinii_books",
+                    "@id": "http://ci.nii.ac.jp/ncid/BB28741244",
+                    "is_downloadable": false
+                }
+            ]
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/books_etc/10857083",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/sansai/books_etc",
+            "rm:id": "10857083",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:30:05Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2022-06-15T00:34:41Z",
+            "book_title": {
+                "ja": "Targeted genome editing using site-specific nucleases",
+                "en": "Targeted genome editing using site-specific nucleases"
+            },
+            "book_owner_role": "contributor",
+            "authors": {
+                "ja": [
+                    {
+                        "name": "Atsuo Kawahara"
+                    },
+                    {
+                        "name": "Taijiro Yabe"
+                    },
+                    {
+                        "name": "Satoshi Ansai"
+                    },
+                    {
+                        "name": "Shinji Takada"
+                    },
+                    {
+                        "name": "Masato Kinoshita"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Atsuo Kawahara"
+                    },
+                    {
+                        "name": "Taijiro Yabe"
+                    },
+                    {
+                        "name": "Satoshi Ansai"
+                    },
+                    {
+                        "name": "Shinji Takada"
+                    },
+                    {
+                        "name": "Masato Kinoshita"
+                    }
+                ]
+            },
+            "book_owner_range": {
+                "ja": "Genome editing in zebrafish and medaka",
+                "en": "Genome editing in zebrafish and medaka"
+            },
+            "publisher": {
+                "ja": "Springer",
+                "en": "Springer"
+            },
+            "publication_date": "2015",
+            "referee": false
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/books_etc/10857082",
+            "@type": "books_etc",
+            "@reverse": "https://api.researchmap.jp/sansai/books_etc",
+            "rm:id": "10857082",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:28:33Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T14:28:33Z",
+            "book_title": {
+                "ja": "実験医学別冊 最強のステップUPシリーズ「今すぐ始めるゲノム編集 - TALEN＆CRISPR/Cas9の必須知識と実験プロトコール"
+            },
+            "book_owner_role": "contributor",
+            "authors": {
+                "ja": [
+                    {
+                        "name": "木下 政人"
+                    },
+                    {
+                        "name": "安齋 賢"
+                    },
+                    {
+                        "name": "久野 悠"
+                    },
+                    {
+                        "name": "川原 敦雄"
+                    }
+                ]
+            },
+            "book_owner_range": {
+                "ja": "小型魚類におけるTALENおよびCRISPR/Cas9を用いた遺伝子改変"
+            },
+            "publisher": {
+                "ja": "羊土社"
+            },
+            "publication_date": "2014",
+            "referee": false
+        }
+    ]
+}

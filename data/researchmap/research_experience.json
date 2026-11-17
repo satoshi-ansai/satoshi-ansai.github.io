@@ -1,0 +1,201 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/research_experience?limit=1000&format=json&start=1",
+    "@type": "research_experience",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 7,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/45980900",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "45980900",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2024-04-01T12:39:33Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-04-01T12:39:53Z",
+            "from_date": "2024-04",
+            "to_date": "9999",
+            "rm:institution_code": "0332000000",
+            "affiliation": {
+                "ja": "岡山大学",
+                "en": "Okayama University"
+            },
+            "section": {
+                "ja": "学術研究院 環境生命自然科学学域",
+                "en": "Ushimado Marine Institute"
+            },
+            "job": {
+                "ja": "教授",
+                "en": "Professor"
+            },
+            "address_country": "JPN"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/41020260",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "41020260",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2023-01-04T02:15:30Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2024-04-01T12:38:20Z",
+            "from_date": "2023-01",
+            "to_date": "2024-03",
+            "rm:institution_code": "0280030000",
+            "affiliation": {
+                "ja": "京都大学",
+                "en": "Kyoto University"
+            },
+            "section": {
+                "ja": "大学院農学研究科 ゲノム編集育種講座",
+                "en": "Laboratory of Genome Editing Breeding, Graduate School of Agriculture"
+            },
+            "job": {
+                "ja": "特定准教授",
+                "en": "Program-specific Associate Professor"
+            },
+            "address_country": "JPN"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/21591919",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "21591919",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2019-11-08T14:51:18Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2023-01-04T02:13:32Z",
+            "from_date": "2019-11",
+            "to_date": "2022-12",
+            "rm:institution_code": "0132044005",
+            "affiliation": {
+                "ja": "東北大学",
+                "en": "Tohoku University"
+            },
+            "section": {
+                "ja": "大学院生命科学研究科 脳生命統御科学専攻",
+                "en": "Department of Integrative Life Sciences, Graduate School of Life Sciences"
+            },
+            "job": {
+                "ja": "助教",
+                "en": "Assistant Professor"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/17475202",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "17475202",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2017-12-01T11:11:20Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2019-11-08T14:49:54Z",
+            "from_date": "2017-11",
+            "to_date": "2019-10",
+            "rm:institution_code": "A156003000",
+            "affiliation": {
+                "ja": "基礎生物学研究所",
+                "en": "National Institute for Basic Biology"
+            },
+            "section": {
+                "ja": "バイオリソース研究室",
+                "en": "Laboratory of Bioresources"
+            },
+            "job": {
+                "ja": "助教",
+                "en": "Assistant Professor"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/16183300",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "16183300",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:25:09Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2017-12-01T11:10:29Z",
+            "from_date": "2016-04",
+            "to_date": "2017-10",
+            "rm:institution_code": "9999999999",
+            "affiliation": {
+                "ja": "日本学術振興会 特別研究員 (PD)",
+                "en": "JSPS Research Fellow (PD)"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/16183299",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "16183299",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:24:30Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2017-12-01T11:10:20Z",
+            "from_date": "2016-04",
+            "to_date": "2017-10",
+            "rm:institution_code": "A158004040",
+            "affiliation": {
+                "ja": "国立遺伝学研究所",
+                "en": "National Institute of Genetics"
+            },
+            "section": {
+                "ja": "集団遺伝研究系 生態遺伝学研究部門",
+                "en": "Division of Ecological Genetics, Department of Population Genetics"
+            }
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/research_experience/16183298",
+            "@type": "research_experience",
+            "@reverse": "https://api.researchmap.jp/sansai/research_experience",
+            "rm:id": "16183298",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T05:23:19Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T05:26:00Z",
+            "from_date": "2013-04",
+            "to_date": "2016-03",
+            "rm:institution_code": "9999999999",
+            "affiliation": {
+                "ja": "日本学術振興会 特別研究員 (DC1)",
+                "en": "JSPS Research Fellow (DC1)"
+            }
+        }
+    ]
+}

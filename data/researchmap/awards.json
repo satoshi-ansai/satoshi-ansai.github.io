@@ -1,0 +1,129 @@
+{
+    "@context": "https://api.researchmap.jp/researcher.jsonld",
+    "@id": "https://api.researchmap.jp/sansai/awards?limit=1000&format=json&start=1",
+    "@type": "awards",
+    "@reverse": "https://api.researchmap.jp/sansai",
+    "total_items": 3,
+    "items": [
+        {
+            "@id": "https://api.researchmap.jp/sansai/awards/1871018",
+            "@type": "awards",
+            "@reverse": "https://api.researchmap.jp/sansai/awards",
+            "rm:id": "1871018",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:06:07Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T14:06:07Z",
+            "award_name": {
+                "ja": "Best Poster Award",
+                "en": "Best Poster Award"
+            },
+            "winners": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Satoshi Ansai"
+                    }
+                ]
+            },
+            "winners_text": {
+                "ja": "安齋 賢",
+                "en": "Satoshi Ansai"
+            },
+            "association": {
+                "ja": "17th Australia and New Zealand Zebrafish Meeting",
+                "en": "17th Australia and New Zealand Zebrafish Meeting"
+            },
+            "award_date": "2016-02"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/awards/1871017",
+            "@type": "awards",
+            "@reverse": "https://api.researchmap.jp/sansai/awards",
+            "rm:id": "1871017",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:05:25Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T14:05:25Z",
+            "award_name": {
+                "ja": "Best Poster Award",
+                "en": "Best Poster Award"
+            },
+            "winners": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Satoshi Ansai"
+                    }
+                ]
+            },
+            "winners_text": {
+                "ja": "安齋 賢",
+                "en": "Satoshi Ansai"
+            },
+            "association": {
+                "ja": "19th Japanese Medaka and Zebrafish Meeting",
+                "en": "19th Japanese Medaka and Zebrafish Meeting"
+            },
+            "award_date": "2013-09"
+        },
+        {
+            "@id": "https://api.researchmap.jp/sansai/awards/1871016",
+            "@type": "awards",
+            "@reverse": "https://api.researchmap.jp/sansai/awards",
+            "rm:id": "1871016",
+            "rm:user_id": "B000253921",
+            "display": "disclosed",
+            "major_achievement": false,
+            "rm:creator_id": "B000253921",
+            "rm:creator_type": "myself",
+            "rm:created": "2016-05-02T14:04:43Z",
+            "rm:modifier_id": "B000253921",
+            "rm:modifier_type": "myself",
+            "rm:modified": "2016-05-02T14:04:43Z",
+            "award_name": {
+                "ja": "Best Poster Award",
+                "en": "Best Poster Award"
+            },
+            "winners": {
+                "ja": [
+                    {
+                        "name": "安齋 賢"
+                    }
+                ],
+                "en": [
+                    {
+                        "name": "Satoshi Ansai"
+                    }
+                ]
+            },
+            "winners_text": {
+                "ja": "安齋 賢",
+                "en": "Satoshi Ansai"
+            },
+            "association": {
+                "ja": "18th Japanese Medaka and Zebrafish Meeting",
+                "en": "18th Japanese Medaka and Zebrafish Meeting"
+            },
+            "award_date": "2012-09"
+        }
+    ]
+}
